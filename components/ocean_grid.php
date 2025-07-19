@@ -22,8 +22,6 @@
             gap: 15px;
             width: 90vw;
             max-width: 1200px;
-            height: 60vw;
-            max-height: 800px;
             margin: 0 auto;
             aspect-ratio: 3/2;
         }
@@ -223,8 +221,20 @@
             font-family: "Roboto", sans-serif !important;
             font-size: 14px;
             color: #949494;
-            width: 600px;
+            max-width: 600px;
             font-weight: 400;
+        }
+
+        @media (max-width: 430px) {
+
+            .grid_title {
+                padding: 0 5px 0 5px;
+                font-size: 2rem !important;
+            }
+
+            .grid_sub {
+                font-size: 0.65rem !important;
+            }
         }
     </style>
 </head>

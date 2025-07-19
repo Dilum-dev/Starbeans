@@ -74,6 +74,23 @@
         font-weight: 300;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
       }
+
+      @media (max-width: 430px){
+        .main-title_video{
+          font-size: 2.5rem;
+        }
+
+        .subtitle_video{
+          font-size: 0.6rem !important;
+          width: 95%;
+        }
+
+        .video-section_component{
+          height: 400px;
+        }
+      }
+
+
     </style>
   </head>
   <body>

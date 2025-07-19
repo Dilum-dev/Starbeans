@@ -49,7 +49,7 @@
             margin-bottom: 60px;
         }
          .reviews-header h2 {
-    font-size: 3rem !important;
+    font-size: 3rem;
     font-weight: 800 ;
     color: #1a365d ;
     margin-bottom: 20px;
@@ -257,6 +257,7 @@
                 display: none;
             }
         }
+
     </style>
 </head>
 <body>
