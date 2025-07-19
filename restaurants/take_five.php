@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    //MENU
+    <!-- MENU -->
 
     <div class="gallery-header">
   <h2>Our Menu</h2>
@@ -113,7 +113,7 @@
   </div>
 </div>
 
-//Reviews
+<!-- Reviews -->
 
 <?php
 
@@ -121,7 +121,7 @@
 
 ?>
     
-    //experience
+    <!-- experience -->
 
     <div class="coffee-flip-gallery">
   <div class="gallery-header">

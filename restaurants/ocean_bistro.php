@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    //mb_encode_numericentity
+    <!-- menu -->
     <div class="gallery-header">
   <h2>Our Menu</h2>
 </div>
@@ -112,12 +112,12 @@
   </div>
 </div>
 
-//reviews
+<!-- reviews -->
 <?php
     include '../includes/ocean_bistro_reviews.php';
 ?>
 
-//experience
+<!-- experience -->
 <div class="coffee-flip-gallery">
   <div class="gallery-header">
     <h2>Ocean Bistro Experience</h2>
