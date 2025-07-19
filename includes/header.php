@@ -322,18 +322,18 @@
             <li>
                 <a href="#">Restaurants</a>
                 <ul class="dropdown">
-                    <li><a href="https://starbeans.ceylonlensmedia.com/ocean-bistro/">Ocean Bistro</a></li>
-                    <li><a href="https://starbeans.ceylonlensmedia.com/the-barn/">The Barn</a></li>
-                    <li><a href="https://starbeans.ceylonlensmedia.com/take-five-cafe/">Take Five</a></li>
+                    <li><a href="/restaurants/ocean_bistro.php">Ocean Bistro</a></li>
+                    <li><a href="/restaurants/the_barn.php">The Barn</a></li>
+                    <li><a href="/restaurants/take_five.php">Take Five</a></li>
                 </ul>
             </li>
-            <li><a href="#">Booking</a></li>
+            <li><a href="/booking.php">Booking</a></li>
             <li>
                 <a href="#">Menu</a>
                 <ul class="dropdown">
-                    <li><a href="https://starbeans.ceylonlensmedia.com/food-energy/">Food</a></li>
-                    <li><a href="https://starbeans.ceylonlensmedia.com/beverages/">Beverages</a></li>
-                    <li><a href="https://starbeans.ceylonlensmedia.com/coffee-2/">Coffee</a></li>
+                    <li><a href="/food_energy.php">Food</a></li>
+                    <li><a href="/beverages.php">Beverages</a></li>
+                    <li><a href="/about.php">Coffee</a></li>
                 </ul>
             </li>
             <li>
@@ -344,8 +344,8 @@
                     <li><a href="https://starbeans.ceylonlensmedia.com/sustainability/">Sustainability</a></li>
                 </ul>
             </li>
-            <li><a href="https://starbeans.ceylonlensmedia.com/about-us-2/">About Us</a></li>
-            <li><a href="https://starbeans.ceylonlensmedia.com/contact/">Contact Us</a></li>
+            <li><a href="/about.php">About Us</a></li>
+            <li><a href="/contact.php">Contact Us</a></li>
         </ul>
 
         <div class="mobile-overlay"></div>
