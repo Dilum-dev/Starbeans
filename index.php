@@ -29,13 +29,13 @@
         </p>
 
         <div class="location-logos">
-            <a href="/galle" class="location-link">
-                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/white-galle.png" alt="Galle Location">
+            <a href="/restaurants/ocean_bistro.php" class="location-link">
+                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/white-galle.png" alt="Ocean Bistro">
             </a>
-            <a href="/ella" class="location-link">
-                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/white-ella-1.png" alt="Ella Location">
+            <a href="/restaurants/the_barn.php" class="location-link">
+                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/white-ella-1.png" alt="The Barn">
             </a>
-            <a href="/take-five" class="location-link">
+            <a href="/restaurants/take_five.php" class="location-link">
                 <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/take-five-logo-v2-.png" alt="Take Five">
             </a>
         </div>
