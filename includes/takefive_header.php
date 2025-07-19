@@ -1,0 +1,217 @@
+<div class="starbeans-nav-container">
+  <style>
+    /* Basic Reset */
+    .starbeans-nav-container * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Main Navigation - Brown Glass Effect */
+    .starbeans-nav-container .starbeans-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(130, 98, 61, 0.25); /* #82623D with transparency */
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.3s ease;
+    }
+    
+    /* Navigation Container */
+    .starbeans-nav-container .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    /* Logo Styles */
+    .starbeans-nav-container .logo {
+      margin-right: auto;
+    }
+    
+    .starbeans-nav-container .logo img {
+      height: 48px;
+      filter: brightness(0) invert(1);
+      transition: all 0.3s ease;
+    }
+    
+    .starbeans-nav-container .logo img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    
+    /* Navigation Links */
+    .starbeans-nav-container .nav-links {
+      display: flex;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .starbeans-nav-container .nav-links > li {
+      position: relative;
+      margin: 0 12px;
+    }
+    
+    .starbeans-nav-container .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .starbeans-nav-container .nav-links a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    
+    /* Dropdown Indicator */
+    .starbeans-nav-container .has-dropdown > a::after {
+      content: '⌄';
+      margin-left: 6px;
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+    
+    .starbeans-nav-container .has-dropdown:hover > a::after {
+      transform: rotate(180deg);
+    }
+    
+    /* Brown Glass Dropdown */
+    .starbeans-nav-container .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      background: rgba(130, 98, 61, 0.35); /* Slightly stronger brown */
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      min-width: 200px;
+      border-radius: 6px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 100;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    
+    .starbeans-nav-container .has-dropdown:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+    
+    .starbeans-nav-container .dropdown li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .starbeans-nav-container .dropdown li:last-child {
+      border-bottom: none;
+    }
+    
+    .starbeans-nav-container .dropdown a {
+      padding: 12px 20px;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .starbeans-nav-container .dropdown a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      padding-left: 25px;
+      color: #ffffff;
+    }
+    
+    /* Hide/show on scroll */
+    .starbeans-nav-container .starbeans-nav.hide {
+      transform: translateY(-100%);
+    }
+    
+    /* Body padding */
+    body {
+      padding-top: 70px !important;
+    }
+  </style>
+
+  <nav class="starbeans-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="https://starbeans.ceylonlensmedia.com/">
+          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo">
+        </a>
+      </div>
+      
+      <ul class="nav-links">
+        <li class="has-dropdown">
+          <a href="#">Restaurants</a>
+          <ul class="dropdown">
+            <li><a href="https://starbeans.ceylonlensmedia.com/ocean-bistro/">Ocean Bistro</a></li>
+            <li><a href="https://starbeans.ceylonlensmedia.com/the-barn/">The Barn</a></li>
+            <li><a href="https://starbeans.ceylonlensmedia.com/take-five-cafe/">Take Five</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Booking</a></li>
+        <li class="has-dropdown">
+          <a href="#">Menu</a>
+          <ul class="dropdown">
+            <li><a href="https://starbeans.ceylonlensmedia.com/food-energy/">Food</a></li>
+            <li><a href="https://starbeans.ceylonlensmedia.com/beverages/">Beverages</a></li>
+            <li><a href="https://starbeans.ceylonlensmedia.com/coffee-2/">Coffee</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Our Essence</a>
+          <ul class="dropdown">
+            <li><a href="https://starbeans.ceylonlensmedia.com/vibes/">Vibes</a></li>
+            <li><a href="https://starbeans.ceylonlensmedia.com/resilience/">Resilience</a></li>
+            <li><a href="https://starbeans.ceylonlensmedia.com/sustainability/">Sustainability</a></li>
+          </ul>
+        </li>
+        <li><a href="https://starbeans.ceylonlensmedia.com/about-us-2/">About Us</a></li>
+        <li><a href="https://starbeans.ceylonlensmedia.com/contact/">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.querySelector('.starbeans-nav-container .starbeans-nav');
+      let lastScroll = 0;
+      
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+          nav.classList.remove('hide');
+          return;
+        }
+        
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          nav.classList.add('hide');
+        } else {
+          nav.classList.remove('hide');
+        }
+        
+        lastScroll = currentScroll;
+      });
+    });
+  </script>
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
