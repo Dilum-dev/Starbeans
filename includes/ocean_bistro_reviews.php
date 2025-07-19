@@ -198,7 +198,7 @@
 
         .slider-nav {
             position: absolute;
-            top: 50%;
+            top: 45%;
             transform: translateY(-50%) ;
             background: rgba(255, 255, 255, 0.8) !important;
             border: 2px solid #71CDFF !important;

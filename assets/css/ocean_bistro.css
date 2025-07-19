@@ -1,5 +1,4 @@
 
-
 /* Import Playfair Display font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
 body,
@@ -14,8 +13,9 @@ html {
 .video-section {
   position: relative;
   width: 100%;
-  height: 120vh; /* Increased height */
+  height: 103vh; /* Increased height */
   overflow: hidden;
+  margin-top: -80px !important;
 }
 
 .video-background {
@@ -31,6 +31,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.5);
 }
 
 .content {
@@ -66,22 +67,23 @@ html {
 }
 
 .main-logo {
-  max-width: 450px !important;
+  max-width: 300px !important;
   height: auto;
-  margin-bottom: -40px; /* Adjusted spacing */
+  margin-bottom: -80px; /* Adjusted spacing */
 }
 
 .title {
   font-family: "Playfair Display", serif;
-  font-size: 6.5rem !important;
+  font-size: 3.5rem !important;
   font-weight: 400 !important;
   color: white;
-  margin: 10px 0;
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
 
 .subtitle {
   font-family: "Playfair Display", serif !important;
-  font-size: 6.5rem !important;
+  font-size: 6rem !important;
   font-weight: 400 !important;
   color: #71cdff;
   margin: 10px 0 20px;
@@ -106,7 +108,7 @@ html {
 
 .description {
   font-family: "Georgia", serif !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
   max-width: 600px !important;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -118,10 +120,12 @@ html {
   border: 2px solid white;
   padding: 12px 30px;
   font-family: "Georgia", serif !important;
-  font-size: 1rem !important;
+  font-size: 1rem!important;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 120px;
+  border-radius: 100px;
+  letter-spacing: 3px;
 }
 
 .reserve-button:hover {
@@ -682,4 +686,11 @@ body, button, input, textarea, select {
   
   .see-more-btn a:hover svg {
     transform: translateX(6px);
+  }
+
+
+  .history_img img{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
   }
