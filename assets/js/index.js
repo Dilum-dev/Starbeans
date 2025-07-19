@@ -1,34 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const video = document.querySelector("video");
-
-  video.play().catch(function (error) {
-    console.log("Video playback failed:", error);
-    if (error.name === "NotAllowedError") {
-      const playButton = document.createElement("button");
-      playButton.textContent = "Play Video";
-      playButton.style.position = "absolute";
-      playButton.style.zIndex = "3";
-      playButton.style.top = "10px";
-      playButton.style.right = "10px";
-      playButton.style.padding = "10px";
-      playButton.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
-      playButton.style.border = "none";
-      playButton.style.borderRadius = "5px";
-      playButton.style.cursor = "pointer";
-
-      playButton.addEventListener("click", function () {
-        video.play();
-        playButton.style.display = "none";
-      });
-
-      document.body.appendChild(playButton);
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure the video plays correctly
+    const video = document.getElementById('bg-video');
+    
+    // Attempt to play the video (muted autoplay may be blocked by some browsers)
+    const playPromise = video.play();
+    
+    if (playPromise !== undefined) {
+        playPromise.catch(error => {
+            // Auto-play was prevented, show a play button or handle accordingly
+            console.log('Auto-play prevented:', error);
+        });
     }
-  });
-
-  const locationLogos = document.querySelectorAll(".location-logo");
-  locationLogos.forEach((logo) => {
-    logo.addEventListener("click", function () {
-      console.log(`${logo.alt} clicked`);
+    
+    // Additional interactive effects can be added here
+    const locationLinks = document.querySelectorAll('.location-link');
+    
+    locationLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1)';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+        });
     });
-  });
 });
