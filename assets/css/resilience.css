@@ -1,0 +1,514 @@
+/* ===== Base Styles ===== */
+    :root {
+      --primary: #8B5A2B;
+      --primary-dark: #6d4722;
+      --light: #f8f5f2;
+      --dark: #2a2a2a;
+      --text: #4a4a4a;
+      --shadow: 0 10px 30px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background-color: #f9f9f9;
+    }
+    
+    h1, h2, h3 {
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    
+    .playfair {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+    
+    /* ===== Hero Section ===== */
+    .hero-section {
+      height: 100vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+    
+    .parallax-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                  url('https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-2--scaled.webp');
+      background-size: cover;
+      background-position: center 20%;
+      will-change: transform;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+      width: 100%;
+    }
+    
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-line {
+      width: 150px;
+      height: 2px;
+      background: var(--primary);
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .hero-line::before, .hero-line::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .hero-line::before {
+      left: -5px;
+    }
+    
+    .hero-line::after {
+      right: -5px;
+    }
+    
+    .scroll-indicator {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      z-index: 2;
+    }
+    
+    .scroll-indicator span {
+      font-size: 12px;
+      letter-spacing: 4px;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+    }
+    
+    .scroll-arrow {
+      width: 20px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      position: relative;
+    }
+    
+    .scroll-arrow::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 2px;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: scrollDown 2s infinite;
+    }
+    
+    @keyframes scrollDown {
+      0% { transform: translate(-50%, 0); opacity: 1; }
+      100% { transform: translate(-50%, 15px); opacity: 0; }
+    }
+    
+    /* ===== Section Styles ===== */
+    section {
+      position: relative;
+      padding: 80px 0;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .section-wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 5%;
+      width: 100%;
+    }
+    
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 50px;
+      text-align: center;
+      color: var(--primary);
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--primary);
+    }
+    
+    .section-subtitle {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-bottom: 40px;
+      text-align: center;
+      color: var(--primary);
+    }
+    
+    .content-text {
+      font-size: 1.1rem;
+      line-height: 2;
+      font-weight: 300;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .content-text p {
+      margin-bottom: 30px;
+    }
+    
+    /* ===== Journey Section ===== */
+    .journey-section {
+      background-color: white;
+    }
+    
+    .full-banner {
+      height: 70vh;
+      min-height: 400px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 80px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    
+    .full-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      will-change: transform;
+    }
+    
+    .overlay-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+    }
+    
+    /* ===== Modern Challenges Section ===== */
+    .challenges-section {
+      background-color: var(--light);
+    }
+    
+    .modern-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin: 60px 0;
+    }
+    
+    .modern-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    }
+    
+    .modern-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 50px rgba(0,0,0,0.12);
+    }
+    
+    .card-image {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+    }
+    
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    
+    .modern-card:hover .card-image img {
+      transform: scale(1.05);
+    }
+    
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(139, 90, 43, 0.1), rgba(139, 90, 43, 0.4));
+    }
+    
+    .card-number {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.15);
+    }
+    
+    .card-content {
+      padding: 30px;
+    }
+    
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .card-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: var(--primary);
+    }
+    
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text);
+    }
+    
+    /* ===== Poem Section ===== */
+    .poem-section {
+      background-color: white;
+      text-align: center;
+    }
+    
+    .poem-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: var(--light);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    
+    .poem-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 30px;
+    }
+    
+    .poem-text {
+      font-style: italic;
+      line-height: 2;
+      font-size: 1.1rem;
+    }
+    
+    .poem-line {
+      margin: 20px 0;
+      height: 1px;
+      background: rgba(139, 90, 43, 0.2);
+    }
+    
+    /* ===== Responsive Styles ===== */
+    @media (max-width: 1200px) {
+      .hero-content h1 {
+        font-size: 5rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .hero-content h1 {
+        font-size: 4rem;
+      }
+      
+      .section-title {
+        font-size: 2.5rem;
+      }
+      
+      .full-banner {
+        height: 50vh;
+      }
+      
+      .card-image {
+        height: 240px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+      }
+      
+      .hero-section {
+        padding-top: 60px;
+      }
+      
+      .modern-grid {
+        gap: 30px;
+      }
+      
+      .card-image {
+        height: 200px;
+      }
+      
+      .card-content {
+        padding: 25px 20px;
+      }
+      
+      .poem-container {
+        padding: 40px 30px;
+      }
+      
+      .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+      }
+      
+      .section-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .content-text {
+        font-size: 1rem;
+      }
+      
+      .full-banner {
+        height: 40vh;
+        min-height: 300px;
+        margin-bottom: 50px;
+      }
+      
+      .poem-title {
+        font-size: 1.8rem;
+      }
+      
+      .poem-text {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+      
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+      
+      .section-wrapper {
+        padding: 0 20px;
+      }
+      
+      .modern-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 40px 0;
+      }
+      
+      .card-image {
+        height: 180px;
+      }
+      
+      .card-content {
+        padding: 20px 15px;
+      }
+      
+      .card-title {
+        font-size: 1.3rem;
+      }
+      
+      .card-content p {
+        font-size: 0.95rem;
+      }
+      
+      .poem-container {
+        padding: 30px 20px;
+      }
+      
+      .poem-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      
+      .poem-text {
+        font-size: 0.95rem;
+      }
+      
+      .hero-line {
+        width: 100px;
+      }
+      
+      .content-text p {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      
+      .section-title {
+        font-size: 1.6rem;
+      }
+      
+      .poem-container {
+        padding: 25px 15px;
+      }
+    }
