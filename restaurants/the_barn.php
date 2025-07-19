@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    //menu
+    <!-- menu -->
 
     <div class="gallery-header">
   <h2>Our Menu</h2>
@@ -113,12 +113,12 @@
   </div>
 </div>
 
-//reviews
+<!-- reviews -->
 <?php
     include '../includes/the_barn_reviews.php';
 ?>
 
-//Experience
+<!-- Experience -->
 
 <div class="coffee-flip-gallery">
   <div class="gallery-header">
