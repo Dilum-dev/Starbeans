@@ -22,19 +22,9 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.FTP_PORT }}
         protocol: ftp
-        local-dir: ./             # Current directory with your built files
-        server-dir: ./           # Since FTP connects directly to public_html
-        gitignore: true          # Automatically ignore git-tracked ignored files
-        dangerous-clean-slate: false  # Set true to delete remote files not in local
-        exclude: |
-          **/.git/**
-          **/.github/**
-          **/.gitignore
-          **/.gitattributes
-          **/.gitmodules
-          **/README.md
-          **/LICENSE
-         
+        local-dir: ./
+        server-dir: ./       # ✅ Uploads directly into the FTP root (which is public_html)
         log-level: verbose
-      env:
-        FTP_SECURE: false         # Often needed for Hostinger
+        exclude: |
+          **/.git*
+          **/.github/**
