@@ -14,6 +14,7 @@
   </head>
 <body>
   <!-- Hero Section -->
+   <?php include 'includes/header.php'; ?>
   <header class="food-hero">
     <div class="food-parallax"></div>
     <div class="hero-content">
@@ -229,5 +230,6 @@
   </section>
 
 <script src="assets/js/food_energy.js"></script>
+<?php include 'includes/footer.php'; ?>
 </body>
 </html>

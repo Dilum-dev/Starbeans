@@ -313,7 +313,9 @@
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: var(--transition);
+      text-decoration: none;
     }
+
     
     .location-card:hover {
       transform: translateY(-10px);

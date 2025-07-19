@@ -12,6 +12,11 @@
             font-family: 'Montserrat', 'Segoe UI', sans-serif;
         }
         
+        /* Add this to create proper stacking context */
+        body {
+            position: relative;
+        }
+        
         nav {
             background: rgba(40, 40, 40, 0.85);
             backdrop-filter: blur(10px);
@@ -22,6 +27,8 @@
             align-items: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 1000; /* Increased z-index */
         }
         
         .logo img {
@@ -93,12 +100,11 @@
         }
         
         .nav-links li:hover > a::after {
-            
             top: 1px;
             border-color: white;
         }
         
-        /* Elegant Glass Dropdown - No slash effect */
+        /* Elegant Glass Dropdown - Fixed z-index */
         .dropdown {
             position: absolute;
             top: 100%;
@@ -107,12 +113,12 @@
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             width: 220px;
-            border-radius: 6px ;
+            border-radius: 6px;
             box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
             opacity: 0;
             visibility: hidden;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-            z-index: 100;
+            z-index: 1001; /* Higher than nav */
             border: 1px solid rgba(255, 255, 255, 0.1);
             overflow: hidden;
             transform: translateY(10px);
@@ -128,6 +134,7 @@
             padding: 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
+            margin: 0; /* Added to fix margin issue */
         }
         
         .dropdown li:last-child {
@@ -153,11 +160,11 @@
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
         }
 
-        /* Mobile Styles (only added for mobile) */
+        /* Mobile Styles */
         .hamburger {
             display: none;
             cursor: pointer;
-            z-index: 1000;
+            z-index: 1002; /* Higher than nav */
             width: 30px;
             height: 24px;
             position: relative;
@@ -213,11 +220,15 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(5px);
-            z-index: 900;
+            z-index: 999; /* Below nav but above content */
         }
 
-        /* Responsive adjustments - only for mobile */
+        /* Responsive adjustments */
         @media (max-width: 1024px) {
+            nav {
+                padding: 15px 20px;
+            }
+            
             .hamburger {
                 display: block;
             }
@@ -235,7 +246,7 @@
                 align-items: flex-start;
                 padding: 100px 30px 30px;
                 transition: right 0.5s ease;
-                z-index: 950;
+                z-index: 1000;
                 border-left: 1px solid rgba(255, 255, 255, 0.1);
             }
 
@@ -253,6 +264,7 @@
             .nav-links li a {
                 padding: 12px 0;
                 font-size: 16px;
+                display: block;
             }
 
             .dropdown {
@@ -268,6 +280,7 @@
                 visibility: visible;
                 transform: none;
                 transition: max-height 0.4s ease;
+                margin-top: 0;
             }
 
             .nav-links li:hover .dropdown {
@@ -280,6 +293,14 @@
 
             .mobile-overlay.active {
                 display: block;
+            }
+            
+            /* Fix dropdown indicator on mobile */
+            .nav-links li:has(.dropdown) > a::after {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
             }
         }
     </style>
@@ -340,12 +361,16 @@
                 this.classList.toggle('active');
                 navLinks.classList.toggle('active');
                 overlay.classList.toggle('active');
+                
+                // Toggle body overflow when menu is open
+                document.body.style.overflow = this.classList.contains('active') ? 'hidden' : '';
             });
 
             overlay.addEventListener('click', function() {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
                 this.classList.remove('active');
+                document.body.style.overflow = '';
             });
 
             // Close dropdowns when clicking elsewhere on mobile

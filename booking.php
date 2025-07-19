@@ -4,40 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select Your Perfect Stay</title>
-    <link rel="stylesheet" href="assets/booking.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
     </head>
   <body>
-    <section class="hero">
-      <h1>Find Your Perfect Stay</h1>
-      <p>
-        Discover exceptional hotels with world-class amenities and unforgettable
-        experiences
-      </p>
-    </section>
+    <?php include 'includes/header.php'; ?>
+      <!-- Hero Section -->
+  <header class="beverage-hero">
+    <div class="beverage-parallax"></div>
+    <div class="hero-content">
+      <h1 class="playfair">Reserve Now!</h1>
+      <div class="hero-line"></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
 
     <div class="hotels-container">
       <div class="hotel-card">
         <img
-          src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+          src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/07/starbeans-plate-2.webp"
           alt="Grand Palace Hotel"
           class="hotel-image"
         />
         <div class="hotel-info">
-          <h2 class="hotel-name hotel-name1">The Barn</h2>
+          <h2 class="hotel-name hotel-name1">Ocean Bistro</h2>
 
           <div class="info-item">
             <!-- <span class="info-icon">🕐</span> -->
-            <span>Check-in: 3:00 PM | Check-out: 11:00 AM</span>
+            <span>Open Hours: 10:00 AM to 10:30 PM</span>
           </div>
 
           <div class="info-item">
             <!-- <span class="info-icon">📞</span> -->
-            <span>+1 (555) 123-4567</span>
+            <span>+94 912 235 500</span>
           </div>
 
           <div class="info-item">
             <!-- <span class="info-icon">📍</span> -->
-            <span>123 Luxury Avenue, Downtown District, NY 10001</span>
+            <span>Galle Dutch Fort, Dutch Hospital, Hospital St, Galle</span>
           </div>
 
           <a href="#" class="reserve-btn reserve-btn1">Reserve Now</a>
@@ -46,26 +52,26 @@
 
       <div class="hotel-card">
         <img
-          src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-          alt="Oceanview Resort"
+          src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-5.webp"
+          alt="The Barn by Starbeans"
           class="hotel-image"
         />
         <div class="hotel-info">
-          <h2 class="hotel-name hotel-name2">Ocean Bistro</h2>
+          <h2 class="hotel-name hotel-name2">The Barn</h2>
 
           <div class="info-item">
             <!-- <span class="info-icon">🕐</span> -->
-            <span>Check-in: 4:00 PM | Check-out: 12:00 PM</span>
+            <span>Open Hours: 6:00 AM to 10:30 PM</span>
           </div>
 
           <div class="info-item">
             <!-- <span class="info-icon">📞</span> -->
-            <span>+1 (555) 987-6543</span>
+            <span>+94 572 232 785 </span>
           </div>
 
           <div class="info-item">
             <!-- <span class="info-icon">📍</span> -->
-            <span>456 Coastal Road, Beachfront Bay, CA 90210</span>
+            <span>No. 50 Wellawaya Road, Ella</span>
           </div>
 
           <a href="#" class="reserve-btn reserve-btn2">Reserve Now</a>
@@ -73,5 +79,6 @@
       </div>
     </div>
     <script src="assets/js/booking.js"></script>
+    <?php include 'includes/footer.php'; ?>
   </body>
 </html>

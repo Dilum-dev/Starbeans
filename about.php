@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/about.css">
   </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <!-- Hero Section -->
   <header class="about-hero">
     <div class="hero-parallax"></div>
@@ -162,5 +163,6 @@
       </div>
     </div>
   </section>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>

@@ -1,3 +1,5 @@
+<footer>
+  
 <div class="starbeans-footer" onmouseover="this.style.transform='scale(1)';">
   <!-- Top Section -->
   <div class="footer-top">
@@ -79,9 +81,16 @@
     padding: 50px 5% 30px;
     font-size: 14px;
     line-height: 1.6;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+    /* Remove max-width: 1400px; */
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    overflow: hidden;
+}
 
 
   /* Top Section */
@@ -354,3 +363,5 @@
     }
   }
 </style>
+
+</footer>

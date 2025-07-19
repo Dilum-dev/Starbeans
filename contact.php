@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/css/contact.css">
   </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <!-- Hero Section -->
   <header class="hero-section">
     <div class="parallax-bg"></div>
@@ -132,5 +133,6 @@ Ella</p>
     </div>
   </section>
     <script src="assets/js/contact.js"></script>
+    <?php include 'includes/footer.php'; ?>
 </body>
 </html>

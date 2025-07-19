@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/coffee.css">
   </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <!-- Hero Section with Coffee Beans -->
   <header class="coffee-hero">
     <div class="coffee-parallax"></div>
@@ -191,7 +192,6 @@
       </div>
     </div>
   </section>
-
- 
+ <?php include 'includes/footer.php'; ?>
 </body>
 </html>

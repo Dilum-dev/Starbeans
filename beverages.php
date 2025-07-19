@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/bevarages.css">
   </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <!-- Hero Section -->
   <header class="beverage-hero">
     <div class="beverage-parallax"></div>
@@ -115,5 +116,6 @@
       </div>
     </div>
   </section>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>

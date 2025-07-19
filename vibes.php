@@ -13,6 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <!-- Hero Section with Parallax -->
   <header id="vibes" class="hero-section">
     <div class="parallax-bg"></div>
@@ -129,5 +130,6 @@
   </section>
 
   <script src="assets/js/vibes.js"></script>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>
