@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Select Your Perfect Stay</title>
+    <title>Reserve a table</title>
     <link rel="stylesheet" href="assets/css/booking.css">
     </head>
   <body>
@@ -25,7 +25,7 @@
       <div class="hotel-card">
         <img
           src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/07/starbeans-plate-2.webp"
-          alt="Grand Palace Hotel"
+          alt="Ocean Bistro"
           class="hotel-image"
         />
         <div class="hotel-info">
