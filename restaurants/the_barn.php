@@ -8,7 +8,7 @@ include '../includes/barn_header.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starbeans Ocean Bistro</title>
+  <title>Starbeans The Barn</title>
   <link rel="stylesheet" href="../assets/css/the_barn.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
   <style>
