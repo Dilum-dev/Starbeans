@@ -74,5 +74,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function goToBooking(){
-  window.location.href = '../email_processes/bistro/oceanBistroBooking.php';
+  window.location.href = '../email_processes/barn/theBarnBooking.php';
 }
