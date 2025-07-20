@@ -481,7 +481,7 @@
             <li class="starbeans-dropdown-item"><a href="/restaurants/take_five.php" class="starbeans-dropdown-link">Take Five</a></li>
           </ul>
         </li>
-        <li class="starbeans-nav-item"><a href="#" class="starbeans-nav-link">Booking</a></li>
+        <li class="starbeans-nav-item"><a href="/booking.php" class="starbeans-nav-link">Booking</a></li>
         <li class="starbeans-nav-item starbeans-has-dropdown">
           <a href="#" class="starbeans-nav-link">Menu</a>
           <ul class="starbeans-dropdown">
