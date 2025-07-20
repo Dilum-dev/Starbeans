@@ -39,7 +39,7 @@ include '../includes/takefive_header.php';
         A cozy expressway stop where warm coffee and local flavors fuel your journey.
       </p>
 
-      <button class="reserve-button">RESERVE TABLE</button>
+      <button class="reserve-button">PRE ORDER</button>
     </div>
   </section>
 
