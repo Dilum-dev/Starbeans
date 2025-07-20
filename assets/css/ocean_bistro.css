@@ -744,7 +744,7 @@ select {
   margin-top: 20px;
 }
 
-.google_map iframe {
+.frame {
   width: 90%;
   height: 600px;
 }
