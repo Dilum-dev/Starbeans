@@ -737,7 +737,7 @@ select {
   margin-top: 60px;
 }
 
-.google_map {
+.location_map {
   display: flex;
   justify-content: center;
   align-items: center;
