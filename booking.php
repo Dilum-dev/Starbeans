@@ -46,7 +46,7 @@
             <span>Galle Dutch Fort, Dutch Hospital, Hospital St, Galle</span>
           </div>
 
-          <a href="#" class="reserve-btn reserve-btn1">Reserve Now</a>
+          <a href="" class="reserve-btn reserve-btn1" onclick="window.location.href = 'email_processes/bistro/oceanBistroBooking.php';">Reserve Now</a>
         </div>
       </div>
 
@@ -74,7 +74,7 @@
             <span>No. 50 Wellawaya Road, Ella</span>
           </div>
 
-          <a href="#" class="reserve-btn reserve-btn2">Reserve Now</a>
+          <a href="" class="reserve-btn reserve-btn2" onclick="window.location.href = 'email_processes/barn/theBarnBooking.php';">Reserve Now</a>
         </div>
       </div>
     </div>

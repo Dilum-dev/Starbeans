@@ -36,11 +36,7 @@
           setTimeout(() => {
             ripple.remove();
           }, 600);
-
-          // Show alert (replace with actual booking logic)
-          setTimeout(() => {
-            alert("Redirecting to booking page...");
-          }, 100);
+          
         });
       });
 
