@@ -84,7 +84,7 @@ html {
   font-family: "Playfair Display", serif !important;
   font-size: 6rem !important;
   font-weight: 400 !important;
-  color: #82623D;
+  color: #82623d;
   margin: 10px 0 20px;
 }
 
@@ -229,11 +229,11 @@ select {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   font-weight: 800;
-  color: #82623D;
+  color: #82623d;
   margin-bottom: 20px;
   letter-spacing: -1.2px;
-  background: -webkit-linear-gradient(90deg, #82623D, #82623D);
-  background: linear-gradient(90deg, #82623D, #82623D);
+  background: -webkit-linear-gradient(90deg, #82623d, #82623d);
+  background: linear-gradient(90deg, #82623d, #82623d);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -439,8 +439,8 @@ select {
   font-size: 16px;
   letter-spacing: 0.5px;
   color: white;
-  background: -webkit-linear-gradient(90deg, #af8758, #82623D);
-  background: linear-gradient(90deg, #af8758, #82623D);
+  background: -webkit-linear-gradient(90deg, #af8758, #82623d);
+  background: linear-gradient(90deg, #af8758, #82623d);
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -463,7 +463,7 @@ select {
     transparent,
     rgba(255, 255, 255, 0.2),
     transparent
-  );      
+  );
   background: -webkit-linear-gradient(
     90deg,
     transparent,
@@ -485,8 +485,8 @@ select {
 }
 
 .menu-button.active {
-  background: -webkit-linear-gradient(90deg, #af8758, #82623D);
-  background: linear-gradient(90deg, #af8758, #82623D);
+  background: -webkit-linear-gradient(90deg, #af8758, #82623d);
+  background: linear-gradient(90deg, #af8758, #82623d);
   box-shadow: 0 4px 20px rgba(41, 98, 185, 0.5);
 }
 
@@ -594,10 +594,10 @@ select {
 .gallery-header h2 {
   font-size: 3rem;
   font-weight: 800;
-  color: #82623D;
+  color: #82623d;
   margin-bottom: 20px;
   letter-spacing: -1.2px;
-  background: linear-gradient(90deg, #82623D, #82623D);
+  background: linear-gradient(90deg, #82623d, #82623d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -705,7 +705,7 @@ select {
   align-items: center;
   justify-content: center;
   padding: 18px 40px;
-      background: linear-gradient(135deg, #82623D, #6a5232);
+  background: linear-gradient(135deg, #82623d, #6a5232);
   color: white;
   text-decoration: none;
   border-radius: 12px;
@@ -737,18 +737,6 @@ select {
   margin-top: 60px;
 }
 
-.google_map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.google_map iframe {
-  width: 90%;
-  height: 600px;
-}
-
 @media (max-width: 430px) {
   .title {
     font-size: 2.5rem !important;
@@ -768,23 +756,23 @@ select {
     height: 400px;
   }
 
-  .gallery-header p{
+  .gallery-header p {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .subtitle{
+  .subtitle {
     font-size: 4rem !important;
   }
-  .dish-title{
+  .dish-title {
     font-size: 2.5rem !important;
   }
-  .reviews-title{
-    font-size:3rem !important;
+  .reviews-title {
+    font-size: 3rem !important;
   }
 
-    .google_map iframe {
+  .google_map iframe {
     width: 90%;
     height: 400px;
   }

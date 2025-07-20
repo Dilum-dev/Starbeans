@@ -11,6 +11,19 @@ include '../includes/takefive_header.php';
   <title>Starbeans Ocean Bistro</title>
   <link rel="stylesheet" href="../assets/css/take_five.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+  <style>
+    .google_map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .google_map iframe {
+      width: 90%;
+      height: 600px;
+    }
+  </style>
 </head>
 
 <body>
