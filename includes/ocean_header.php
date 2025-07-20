@@ -32,7 +32,6 @@
       width: 100%;
       max-width: 1400px;
       margin: 0 auto;
-      position: relative;
     }
     
     /* Logo Styles */
@@ -419,7 +418,7 @@
     }
     
     /* Mobile Responsive */
-    @media (max-width: 768px) {
+    @media (max-width: 1212px) {
       .starbeans-nav-container .starbeans-nav-links {
         display: none;
       }
