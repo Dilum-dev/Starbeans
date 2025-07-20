@@ -11,6 +11,20 @@ include '../includes/ocean_header.php';
   <title>Starbeans Ocean Bistro</title>
   <link rel="stylesheet" href="../assets/css/ocean_bistro.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+
+  <style>
+    .location_map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.frame {
+  width: 90%;
+  height: 600px;
+}
+  </style>
 </head>
 
 <body>
