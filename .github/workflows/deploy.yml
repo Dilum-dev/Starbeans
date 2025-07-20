@@ -26,6 +26,8 @@ jobs:
         server-dir: ./       # ✅ Uploads directly into the FTP root (which is public_html)
         log-level: verbose
         exclude: |
-          **/.git*
-          **/.github/**
           .git*
+          **/.git*
+          **/.git/**
+          **/.github/**
+          .github/**
