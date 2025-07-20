@@ -11,6 +11,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <link rel="stylesheet" href="assets/css/contact.css">
+  <style>
+    .swal2-confirm{
+        background-color: #8B5A2B !important
+      }
+  </style>
   </head>
 <body>
   <?php include 'includes/header.php'; ?>
