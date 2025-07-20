@@ -153,7 +153,7 @@ include '../includes/barn_header.php';
   ?>
 
   <div class="google_map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.7661511121323!2d80.2176323864962!3d6.02680256315019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173a66d5c3eeb%3A0x687d6e1ded70935f!2sOcean%20Bistro%20by%20Starbeans!5e0!3m2!1sen!2slk!4v1752929179589!5m2!1sen!2slk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126756.31331633075!2d80.96604665823887!3d6.874448958553228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465b6a850450d%3A0xebad99a7765a7f55!2sThe%20Barn%20by%20Starbeans!5e0!3m2!1sen!2slk!4v1753028259083!5m2!1sen!2slk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
   <!-- experience -->
