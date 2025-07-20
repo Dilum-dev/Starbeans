@@ -1,3 +1,4 @@
+<?php include 'includes/indexheader.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,13 @@
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <?php include 'includes/indexheader.php'; ?>
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
             <source src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-28-at-01.48.17.mp4" type="video/mp4">
         </video>
     </div>
 
-    <main class="content">
+    <div class="content">
       <div class="logo-container">
             <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png" alt="Starbeans Logo" class="main-logo">
         </div>
@@ -31,16 +31,16 @@
 
         <div class="location-logos">
             <a href="/restaurants/ocean_bistro.php" class="location-link">
-                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/white-galle.png" alt="Ocean Bistro">
+                <img src="assets/images/ocean-lg.png" alt="Ocean Bistro">
             </a>
             <a href="/restaurants/the_barn.php" class="location-link">
-                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/white-ella-1.png" alt="The Barn">
+                <img src="assets/images/barn-lg.png" alt="The Barn">
             </a>
             <a href="/restaurants/take_five.php" class="location-link">
-                <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/take-five-logo-v2-.png" alt="Take Five">
+                <img src="assets/images/take-lg.png" alt="Take Five">
             </a>
         </div>
-    </main>
+</div>
 
   <script src="assets/js/index.js"></script>
   <?php include 'includes/footer.php'; ?>

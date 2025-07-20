@@ -14,8 +14,8 @@
         }
 
         body {
-            min-height: 200vh; /* For demonstration - to allow scrolling */
-            background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center/cover;
+            /* min-height: 200vh; For demonstration - to allow scrolling   */
+            /* background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center/cover; */
         }
 
         nav {
