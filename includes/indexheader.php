@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,27 +14,26 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        body {
-            /* min-height: 200vh; For demonstration - to allow scrolling   */
-            /* background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center/cover; */
-        }
-
         nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             background-color: transparent;
-            padding: 25px 0;
+            padding: 30px 0;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         nav.scrolled {
             background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        nav.hide {
+            transform: translateY(-100%);
         }
 
         .nav-container {
@@ -173,8 +173,15 @@
             }
 
             @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
 
             .dropdown-content {
@@ -196,6 +203,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav id="navbar">
         <div class="nav-container">
@@ -218,7 +226,7 @@
                 </li>
                 <li style="--i: 3"><a href="#">Contact</a></li>
             </ul>
-            
+
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -236,7 +244,7 @@
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active');
-            
+
             // Toggle hamburger animation
             if (navLinks.classList.contains('active')) {
                 hamburger.children[0].style.transform = 'translateY(9px) rotate(45deg)';
@@ -280,6 +288,41 @@
                 }
             });
         });
+
+        // Hide navbar on scroll down, show on scroll up
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+        const scrollThreshold = 100; // Adjust this value as needed
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            // Always show navbar when at top of page
+            if (currentScroll <= 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('scrolled');
+                return;
+            }
+
+            // Scroll down behavior
+            if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+                navbar.classList.add('hide');
+            }
+            // Scroll up behavior
+            else if (currentScroll < lastScroll) {
+                navbar.classList.remove('hide');
+            }
+
+            // Background change logic
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        });
     </script>
 </body>
+
 </html>
