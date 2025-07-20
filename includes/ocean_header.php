@@ -333,7 +333,6 @@
       font-weight: 500;
       font-size: 16px;
       text-align: center;
-      background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -459,6 +458,10 @@
         padding-top: 64px !important;
       }
     }
+
+    .extra_margin{
+      margin-bottom: 10px;
+    }
   </style>
 
   <nav class="starbeans-nav">
@@ -523,7 +526,7 @@
       </div>
       
       <div class="starbeans-mobile-nav-item">
-        <a href="#" class="starbeans-mobile-nav-link">Booking</a>
+        <a href="#" class="starbeans-mobile-nav-link extra_margin">Booking</a>
       </div>
       
       <div class="starbeans-mobile-nav-item">
@@ -545,11 +548,11 @@
       </div>
       
       <div class="starbeans-mobile-nav-item">
-        <a href="https://starbeans.ceylonlensmedia.com/about-us-2/" class="starbeans-mobile-nav-link">About Us</a>
+        <a href="https://starbeans.ceylonlensmedia.com/about-us-2/" class="starbeans-mobile-nav-link extra_margin">About Us</a>
       </div>
       
       <div class="starbeans-mobile-nav-item">
-        <a href="https://starbeans.ceylonlensmedia.com/contact/" class="starbeans-mobile-nav-link">Contact Us</a>
+        <a href="https://starbeans.ceylonlensmedia.com/contact/" class="starbeans-mobile-nav-link extra_margin">Contact Us</a>
       </div>
     </nav>
   </div>
