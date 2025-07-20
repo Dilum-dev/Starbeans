@@ -30,7 +30,7 @@ include '../includes/barn_header.php';
   <section class="video-section">
     <div class="video-background">
       <video autoplay muted loop>
-        <source src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/Barn-intro-.mov" type="video/mp4">
+        <source src="../assets/video/barn_intro.mp4" type="video/mp4">
       </video>
     </div>
 
