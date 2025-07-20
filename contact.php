@@ -41,18 +41,18 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
+                <input type="text" id="firstName" name="firstName">
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <input type="text" id="lastName" name="lastName">
               </div>
             </div>
             
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
@@ -62,7 +62,7 @@
             
             <div class="form-group">
               <label for="subject">Subject</label>
-              <select id="subject" name="subject" required>
+              <select id="subject" name="subject">
                 <option value="">Select a subject</option>
                 <option value="reservation">Table Reservation</option>
                 <option value="event">Special Event Booking</option>
@@ -74,11 +74,11 @@
             
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you..."></textarea>
             </div>
             
-            <button type="submit" class="submit-btn">
-              <span>Send Message</span>
+            <button type="submit" class="submit-btn btn-send">
+              Send Message
             </button>
           </form>
         </div>
@@ -132,6 +132,7 @@ Ella</p>
       </div>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/contact.js"></script>
     <?php include 'includes/footer.php'; ?>
 </body>

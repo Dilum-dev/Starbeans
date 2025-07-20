@@ -39,7 +39,7 @@ include '../includes/ocean_header.php';
         Enjoy a unique blend of colonial charm, ocean views, and exquisite cuisine—crafted for those who appreciate the finer things in life.
       </p>
 
-      <button class="reserve-button">RESERVE TABLE</button>
+      <button class="reserve-button" onclick="goToBooking()">RESERVE TABLE</button>
     </div>
   </section>
 

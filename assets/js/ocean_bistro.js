@@ -33,3 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set interval to restart animation every 5 seconds
   setInterval(restartAnimation, 5000);
 });
+
+function goToBooking(){
+  window.location.href = '../email_processes/bistro/oceanBistroBooking.php';
+}
