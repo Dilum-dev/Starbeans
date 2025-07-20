@@ -466,7 +466,7 @@
   <nav class="starbeans-nav">
     <div class="starbeans-nav-wrapper">
       <div class="starbeans-logo-section">
-        <a href="https://starbeans.ceylonlensmedia.com/">
+        <a href="https://starbeansceylon.ceylonlensmedia.com/">
           <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo">
         </a>
       </div>
@@ -476,30 +476,30 @@
         <li class="starbeans-nav-item starbeans-has-dropdown">
           <a href="#" class="starbeans-nav-link">Restaurants</a>
           <ul class="starbeans-dropdown">
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/ocean-bistro/" class="starbeans-dropdown-link">Ocean Bistro</a></li>
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/the-barn/" class="starbeans-dropdown-link">The Barn</a></li>
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/take-five-cafe/" class="starbeans-dropdown-link">Take Five</a></li>
+            <li class="starbeans-dropdown-item"><a href="/restaurants/ocean_bistro.php" class="starbeans-dropdown-link">Ocean Bistro</a></li>
+            <li class="starbeans-dropdown-item"><a href="/restaurants/the_barn.php" class="starbeans-dropdown-link">The Barn</a></li>
+            <li class="starbeans-dropdown-item"><a href="/restaurants/take_five.php" class="starbeans-dropdown-link">Take Five</a></li>
           </ul>
         </li>
-        <li class="starbeans-nav-item"><a href="#" class="starbeans-nav-link">Booking</a></li>
+        <li class="starbeans-nav-item"><a href="/booking.php" class="starbeans-nav-link">Booking</a></li>
         <li class="starbeans-nav-item starbeans-has-dropdown">
           <a href="#" class="starbeans-nav-link">Menu</a>
           <ul class="starbeans-dropdown">
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/food-energy/" class="starbeans-dropdown-link">Food</a></li>
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/beverages/" class="starbeans-dropdown-link">Beverages</a></li>
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/coffee-2/" class="starbeans-dropdown-link">Coffee</a></li>
+            <li class="starbeans-dropdown-item"><a href="/food_energy.php" class="starbeans-dropdown-link">Food</a></li>
+            <li class="starbeans-dropdown-item"><a href="/beverages.php" class="starbeans-dropdown-link">Beverages</a></li>
+            <li class="starbeans-dropdown-item"><a href="/coffee.php" class="starbeans-dropdown-link">Coffee</a></li>
           </ul>
         </li>
         <li class="starbeans-nav-item starbeans-has-dropdown">
           <a href="#" class="starbeans-nav-link">Our Essence</a>
           <ul class="starbeans-dropdown">
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/vibes/" class="starbeans-dropdown-link">Vibes</a></li>
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/resilience/" class="starbeans-dropdown-link">Resilience</a></li>
-            <li class="starbeans-dropdown-item"><a href="https://starbeans.ceylonlensmedia.com/sustainability/" class="starbeans-dropdown-link">Sustainability</a></li>
+            <li class="starbeans-dropdown-item"><a href="/vibes.php" class="starbeans-dropdown-link">Vibes</a></li>
+            <li class="starbeans-dropdown-item"><a href="/resilience.php" class="starbeans-dropdown-link">Resilience</a></li>
+            <li class="starbeans-dropdown-item"><a href="/sustainability.php" class="starbeans-dropdown-link">Sustainability</a></li>
           </ul>
         </li>
-        <li class="starbeans-nav-item"><a href="https://starbeans.ceylonlensmedia.com/about-us-2/" class="starbeans-nav-link">About Us</a></li>
-        <li class="starbeans-nav-item"><a href="https://starbeans.ceylonlensmedia.com/contact/" class="starbeans-nav-link">Contact Us</a></li>
+        <li class="starbeans-nav-item"><a href="/about.php" class="starbeans-nav-link">About Us</a></li>
+        <li class="starbeans-nav-item"><a href="/contact.php" class="starbeans-nav-link">Contact Us</a></li>
       </ul>
       
       <!-- Hamburger Menu Button -->
@@ -518,40 +518,40 @@
       <div class="starbeans-mobile-nav-item">
         <a href="#" class="starbeans-mobile-nav-link starbeans-mobile-dropdown-trigger">Restaurants</a>
         <div class="starbeans-mobile-dropdown">
-          <a href="https://starbeans.ceylonlensmedia.com/ocean-bistro/" class="starbeans-mobile-dropdown-link">Ocean Bistro</a>
-          <a href="https://starbeans.ceylonlensmedia.com/the-barn/" class="starbeans-mobile-dropdown-link">The Barn</a>
-          <a href="https://starbeans.ceylonlensmedia.com/take-five-cafe/" class="starbeans-mobile-dropdown-link">Take Five</a>
+          <a href="/restaurants/ocean_bistro.php" class="starbeans-mobile-dropdown-link">Ocean Bistro</a>
+          <a href="/restaurants/the_barn.php" class="starbeans-mobile-dropdown-link">The Barn</a>
+          <a href="/restaurants/take_five.php" class="starbeans-mobile-dropdown-link">Take Five</a>
         </div>
       </div>
       
       <div class="starbeans-mobile-nav-item">
-        <a href="#" class="starbeans-mobile-nav-link extra_margin">Booking</a>
+        <a href="/booking.php" class="starbeans-mobile-nav-link extra_margin">Booking</a>
       </div>
       
       <div class="starbeans-mobile-nav-item">
         <a href="#" class="starbeans-mobile-nav-link starbeans-mobile-dropdown-trigger">Menu</a>
         <div class="starbeans-mobile-dropdown">
-          <a href="https://starbeans.ceylonlensmedia.com/food-energy/" class="starbeans-mobile-dropdown-link">Food</a>
-          <a href="https://starbeans.ceylonlensmedia.com/beverages/" class="starbeans-mobile-dropdown-link">Beverages</a>
-          <a href="https://starbeans.ceylonlensmedia.com/coffee-2/" class="starbeans-mobile-dropdown-link">Coffee</a>
+          <a href="/food_energy.php" class="starbeans-mobile-dropdown-link">Food</a>
+          <a href="/beverages.php" class="starbeans-mobile-dropdown-link">Beverages</a>
+          <a href="/coffee.php" class="starbeans-mobile-dropdown-link">Coffee</a>
         </div>
       </div>
       
       <div class="starbeans-mobile-nav-item">
         <a href="#" class="starbeans-mobile-nav-link starbeans-mobile-dropdown-trigger">Our Essence</a>
         <div class="starbeans-mobile-dropdown">
-          <a href="https://starbeans.ceylonlensmedia.com/vibes/" class="starbeans-mobile-dropdown-link">Vibes</a>
-          <a href="https://starbeans.ceylonlensmedia.com/resilience/" class="starbeans-mobile-dropdown-link">Resilience</a>
-          <a href="https://starbeans.ceylonlensmedia.com/sustainability/" class="starbeans-mobile-dropdown-link">Sustainability</a>
+          <a href="/vibes.php" class="starbeans-mobile-dropdown-link">Vibes</a>
+          <a href="/resilience.php" class="starbeans-mobile-dropdown-link">Resilience</a>
+          <a href="/sustainability.php" class="starbeans-mobile-dropdown-link">Sustainability</a>
         </div>
       </div>
       
       <div class="starbeans-mobile-nav-item">
-        <a href="https://starbeans.ceylonlensmedia.com/about-us-2/" class="starbeans-mobile-nav-link extra_margin">About Us</a>
+        <a href="/about.php" class="starbeans-mobile-nav-link extra_margin">About Us</a>
       </div>
       
       <div class="starbeans-mobile-nav-item">
-        <a href="https://starbeans.ceylonlensmedia.com/contact/" class="starbeans-mobile-nav-link extra_margin">Contact Us</a>
+        <a href="/contact.php" class="starbeans-mobile-nav-link extra_margin">Contact Us</a>
       </div>
     </nav>
   </div>
