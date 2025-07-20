@@ -69,3 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+function openMenu() {
+  window.open('../assets/menu_pages.pdf', '_blank');
+}

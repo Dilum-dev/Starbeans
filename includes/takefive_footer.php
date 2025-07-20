@@ -68,13 +68,22 @@
   <!-- Footer Bottom -->
 <div class="footer-bottom">
   <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
-  <p class="powered-by">Powered by <a href="https://www.geminiflare.com" target="_blank" rel="noopener noreferrer">Geminiflare</a></p>
+  <p class="powered-by">Powered by <a href="https://www.geminiflare.com" target="_blank" rel="noopener noreferrer" class="glink">Geminiflare</a></p>
 </div>
 </div>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap');
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+   .glink{
+    text-decoration: none !important;
+    color: white;
+  }
+
+  .glink:hover{
+    color: #ccc;
+  }
 
   /* Base Styles */
   .starbeans-footer {

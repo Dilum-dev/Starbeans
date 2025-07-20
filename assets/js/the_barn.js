@@ -76,3 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function goToBooking(){
   window.location.href = '../email_processes/bistro/oceanBistroBooking.php';
 }
+
+function openMenu() {
+  window.open('../assets/menu_pages.pdf', '_blank');
+}

@@ -123,8 +123,7 @@ include '../includes/ocean_header.php';
     </div>
   </div>
   <div class="menu-buttons-container">
-    <button class="menu-button active">Food Menu</button>
-    <button class="menu-button">Beverage Menu</button>
+    <button class="menu-button active" onclick="openMenu()">Our Menu</button>
   </div>
   <!-- Modal Popup -->
   <div id="pastaModal" class="modal">
@@ -238,14 +237,14 @@ include '../includes/ocean_header.php';
       </div>
     </div>
 
-    <div class="see-more-btn">
+    <!-- <div class="see-more-btn">
       <a href="#">
         Explore More
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
       </a>
-    </div>
+    </div> -->
   </div>
 
   <?php
