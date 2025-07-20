@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbeans Ceylon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbeans Ceylon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+    <?php include 'includes/indexheader.php'; ?>
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
             <source src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-28-at-01.48.17.mp4" type="video/mp4">
         </video>
     </div>
 
-    <div class="content">
-        <div class="logo-container">
+    <main class="content">
+      <div class="logo-container">
             <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png" alt="Starbeans Logo" class="main-logo">
         </div>
 
@@ -39,10 +40,9 @@
                 <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/take-five-logo-v2-.png" alt="Take Five">
             </a>
         </div>
-    </div>
+    </main>
 
-    <?php include('includes/footer.php'); ?>
-
-    <script src="assets/js/index.js"></script>
+  <script src="assets/js/index.js"></script>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>

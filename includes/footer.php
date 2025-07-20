@@ -88,8 +88,11 @@
 }
 
 footer {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: #000; /* Match your footer background */
+  z-index: 10; /* Ensure it stays above the video */
+  overflow: hidden;
 }
 
 
