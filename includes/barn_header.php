@@ -119,7 +119,7 @@
       top: 100%;
       left: 50%;
       transform: translateX(-50%) translateY(15px) scale(0.95);
-      background: rgba(60, 100, 150, 0.65);
+      background: rgba(23, 88, 21, 0.7);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       min-width: 200px;
