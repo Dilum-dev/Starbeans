@@ -45,18 +45,19 @@
     
     /* ===== Hero Section ===== */
     .about-hero {
-      height: 100vh;
+      height: 103vh;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       overflow: hidden;
+      margin-top: -80px;
     }
     
     .hero-parallax {
       position: absolute;
       inset: 0;
-      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                   url('https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-scaled.webp');
       background-size: cover;
       background-position: center;

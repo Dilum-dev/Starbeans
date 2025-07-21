@@ -15,7 +15,7 @@
       <h1 class="playfair">Reserve Now!</h1>
       <div class="hero-line"></div>
     </div>
-    <div class="scroll-indicator">
+        <div class="scroll-indicator">
       <span>Scroll</span>
       <div class="scroll-arrow"></div>
     </div>

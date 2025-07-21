@@ -61,7 +61,7 @@ include '../includes/takefive_header.php';
   ?>
 
   <div class="history_img">
-    <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/the-five-1-1.png" alt="">
+    <img src="../assets/images/take_history.webp" alt="">
   </div>
 
   <br>

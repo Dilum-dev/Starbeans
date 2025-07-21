@@ -41,7 +41,7 @@
     }
     
     .starbeans-nav-container .starbeans-logo-section img {
-      height: 48px;
+      height: 55px;
       filter: brightness(0) invert(1);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -432,7 +432,7 @@
       }
       
       .starbeans-nav-container .starbeans-logo-section img {
-        height: 40px;
+        height: 50px;
       }
     }
     

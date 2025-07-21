@@ -87,7 +87,7 @@
 
   /* Base Styles */
   .starbeans-footer {
-    background: linear-gradient(135deg, #5C4A36 0%, #82623D 50%, #5C4A36 100%);
+    background: linear-gradient(135deg, #520B0C 0%, #802a2bff 50%, #520B0C 100%);
     color: #eee;
     font-family: 'BIZ UDPMincho', serif;
     padding: 50px 5% 30px;

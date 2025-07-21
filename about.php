@@ -16,7 +16,6 @@
     <div class="hero-parallax"></div>
     <div class="hero-content">
       <h1 class="playfair">Our Story</h1>
-      <p class="hero-subtitle">From Dream to Distinguished Legacy</p>
       <div class="hero-line"></div>
     </div>
     <div class="scroll-indicator">

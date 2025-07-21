@@ -122,6 +122,7 @@ include '../includes/ocean_header.php';
       </div>
     </div>
   </div>
+  
   <div class="menu-buttons-container">
     <button class="menu-button active" onclick="window.open('../assets/OCEAN BISTRO - FOOD & DRINK.pdf', '_blank');">Food & Drink</button>
     <button class="menu-button" onclick="window.open('../assets/OCEAN BISTRO - WINE & LIQUOR.pdf', '_blank');">Wine & Liquor</button>

@@ -13,7 +13,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(130, 98, 61, 0.25);
+      background: rgba(130, 61, 61, 0.25);
       backdrop-filter: blur(15px);
       -webkit-backdrop-filter: blur(15px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -41,7 +41,7 @@
     }
     
     .starbeans-nav-container .starbeans-logo-section img {
-      height: 48px;
+      height: 55px;
       filter: brightness(0) invert(1);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -119,7 +119,7 @@
       top: 100%;
       left: 50%;
       transform: translateX(-50%) translateY(15px) scale(0.95);
-      background: rgba(150, 129, 60, 0.65);
+      background: rgba(150, 60, 60, 0.65);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       min-width: 200px;
@@ -219,7 +219,7 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      background: rgba(95, 75, 39, 0.95);
+      background: rgba(95, 39, 39, 0.95);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       opacity: 0;
@@ -432,7 +432,7 @@
       }
       
       .starbeans-nav-container .starbeans-logo-section img {
-        height: 40px;
+        height: 50px;
       }
     }
     

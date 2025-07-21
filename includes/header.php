@@ -1,403 +1,662 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbeans Navigation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', 'Segoe UI', sans-serif;
-        }
-        
-        /* Add this to create proper stacking context */
-        body {
-            position: relative;
-        }
-        
-        nav {
-            background: rgba(40, 40, 40, 0.85);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            z-index: 1000; /* Increased z-index */
-        }
-        
-        .logo img {
-            height: 40px;
-            width: auto;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            filter: brightness(0) invert(1);
-        }
-        
-        .logo img:hover {
-            transform: scale(1.05);
-            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            position: relative;
-            margin: 0 12px;
-        }
-        
-        .nav-links li a {
-            color: #e0e0e0;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 15px;
-            padding: 12px 15px;
-            transition: all 0.3s ease;
-            position: relative;
-            letter-spacing: 0.3px;
-        }
-        
-        .nav-links li a:hover {
-            color: #ffffff;
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-        }
-        
-        .nav-links li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: rgba(255, 255, 255, 0.9);
-            bottom: 0;
-            left: 15px;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links li:hover > a::after {
-            width: calc(100% - 30px);
-        }
-        
-        /* Modern dropdown indicator */
-        .nav-links li:has(.dropdown) > a::after {
-            content: '';
-            display: inline-block;
-            margin-left: 8px;
-            width: 8px;
-            height: 8px;
-            border-right: 2px solid rgba(255,255,255,0.7);
-            border-bottom: 2px solid rgba(255,255,255,0.7);
-            transform: rotate(45deg);
-            transition: all 0.3s ease;
-            position: relative;
-            top: -2px;
-        }
-        
-        .nav-links li:hover > a::after {
-            top: 1px;
-            border-color: white;
-        }
-        
-        /* Elegant Glass Dropdown - Fixed z-index */
-        .dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: rgba(50, 50, 50, 0.9);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            width: 220px;
-            border-radius: 6px;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-            z-index: 1001; /* Higher than nav */
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            overflow: hidden;
-            transform: translateY(10px);
-        }
-        
-        .nav-links li:hover .dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        
-        .dropdown li {
-            padding: 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-            margin: 0; /* Added to fix margin issue */
-        }
-        
-        .dropdown li:last-child {
-            border-bottom: none;
-        }
-        
-        .dropdown li a {
-            color: rgba(230, 230, 230, 0.95);
-            font-size: 14px;
-            padding: 12px 20px;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        
-        .dropdown li:hover {
-            background: rgba(255, 255, 255, 0.05);
-        }
-        
-        .dropdown li a:hover {
-            color: #ffffff;
-            padding-left: 25px;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent);
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-        }
+<div class="starbeans-nav-container">
+  <style>
 
-        /* Mobile Styles */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            z-index: 1002; /* Higher than nav */
-            width: 30px;
-            height: 24px;
-            position: relative;
-        }
+    /* Basic Reset */
+    .starbeans-nav-container {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Main Navigation - Enhanced Blue Glass */
+    .starbeans-nav-container .starbeans-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(99, 83, 48, 0.69);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Navigation Container */
+    .starbeans-nav-container .starbeans-nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    /* Logo Styles */
+    .starbeans-nav-container .starbeans-logo-section {
+      margin-right: auto;
+      z-index: 10001;
+    }
+    
+    .starbeans-nav-container .starbeans-logo-section img {
+      height: 55px;
+      filter: brightness(0) invert(1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-logo-section img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    
+    /* Desktop Navigation Links */
+    .starbeans-nav-container .starbeans-nav-links {
+      display: flex;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-nav-links > .starbeans-nav-item {
+      position: relative;
+      margin: 0 12px;
+    }
+    
+    .starbeans-nav-container .starbeans-nav-links .starbeans-nav-link {
+      color: white;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+    
+    .starbeans-nav-container .starbeans-nav-links .starbeans-nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.8);
+      transform: translateX(-50%);
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-nav-links .starbeans-nav-link:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    
+    .starbeans-nav-container .starbeans-nav-links .starbeans-nav-link:hover::before {
+      width: 80%;
+    }
+    
+    /* Dropdown Indicator */
+    .starbeans-nav-container .starbeans-has-dropdown > .starbeans-nav-link::after {
+      content: '⌄';
+      margin-left: 6px;
+      font-size: 14px;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-has-dropdown:hover > .starbeans-nav-link::after {
+      transform: rotate(180deg);
+    }
+    
+    /* Enhanced Glass Dropdown */
+    .starbeans-nav-container .starbeans-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(15px) scale(0.95);
+      background: rgba(88, 67, 21, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      min-width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 100;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+    }
+    
+    .starbeans-nav-container .starbeans-has-dropdown:hover .starbeans-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(5px) scale(1);
+    }
+    
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transform: translateY(10px);
+      opacity: 0;
+      animation: starbeans-dropdown-slide-in 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-item:nth-child(1) { animation-delay: 0.1s; }
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-item:nth-child(2) { animation-delay: 0.15s; }
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-item:nth-child(3) { animation-delay: 0.2s; }
+    
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-item:last-child {
+      border-bottom: none;
+    }
+    
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-link {
+      padding: 12px 20px;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+    }
+    
+    .starbeans-nav-container .starbeans-dropdown .starbeans-dropdown-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      padding-left: 25px;
+      color: #ffffff;
+    }
+    
+    /* Hamburger Menu Button */
+    .starbeans-nav-container .starbeans-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 10001;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-hamburger:hover {
+      transform: scale(1.1);
+    }
+    
+    .starbeans-nav-container .starbeans-hamburger-line {
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: center;
+    }
+    
+    /* Hamburger Animation */
+    .starbeans-nav-container .starbeans-hamburger.starbeans-active .starbeans-hamburger-line:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .starbeans-nav-container .starbeans-hamburger.starbeans-active .starbeans-hamburger-line:nth-child(2) {
+      opacity: 0;
+      transform: scale(0);
+    }
+    
+    .starbeans-nav-container .starbeans-hamburger.starbeans-active .starbeans-hamburger-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Mobile Menu Overlay */
+    .starbeans-nav-container .starbeans-mobile-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(94, 71, 29, 0.81);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 10000;
+      padding-top: 80px;
+      overflow-y: auto;
+    }
+    
+    /* Mobile Close Button */
+    .starbeans-nav-container .starbeans-mobile-close {
+      position: absolute;
+      top: 20px;
+      right: 5%;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transform: rotate(0deg) scale(0.8);
+      opacity: 0;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-overlay.starbeans-active .starbeans-mobile-close {
+      transform: rotate(180deg) scale(1);
+      opacity: 1;
+      transition-delay: 0.2s;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: rotate(180deg) scale(1.1);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-close::before,
+    .starbeans-nav-container .starbeans-mobile-close::after {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background: white;
+      border-radius: 1px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-close::before {
+      transform: rotate(45deg);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-close::after {
+      transform: rotate(-45deg);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-close:hover::before,
+    .starbeans-nav-container .starbeans-mobile-close:hover::after {
+      background: rgba(255, 255, 255, 0.9);
+      width: 20px;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-overlay.starbeans-active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Mobile Navigation */
+    .starbeans-nav-container .starbeans-mobile-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-item {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-overlay.starbeans-active .starbeans-mobile-nav-item {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-item:nth-child(1) { transition-delay: 0.1s; }
+    .starbeans-nav-container .starbeans-mobile-nav-item:nth-child(2) { transition-delay: 0.15s; }
+    .starbeans-nav-container .starbeans-mobile-nav-item:nth-child(3) { transition-delay: 0.2s; }
+    .starbeans-nav-container .starbeans-mobile-nav-item:nth-child(4) { transition-delay: 0.25s; }
+    .starbeans-nav-container .starbeans-mobile-nav-item:nth-child(5) { transition-delay: 0.3s; }
+    .starbeans-nav-container .starbeans-mobile-nav-item:nth-child(6) { transition-delay: 0.35s; }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-link {
+      display: block;
+      width: 100%;
+      padding: 18px 25px;
+      color: white;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-link:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-link:hover::before {
+      left: 100%;
+    }
+    
+    /* Mobile Dropdown */
+    .starbeans-nav-container .starbeans-mobile-dropdown {
+      margin-top: 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-item.starbeans-dropdown-active .starbeans-mobile-dropdown {
+      max-height: 200px;
+      opacity: 1;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-dropdown .starbeans-mobile-dropdown-link {
+      display: block;
+      padding: 12px 20px;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      margin-bottom: 5px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-nav-item.starbeans-dropdown-active .starbeans-mobile-dropdown-link {
+      transform: translateX(0);
+      opacity: 1;
+      transition-delay: 0.1s;
+    }
+    
+    .starbeans-nav-container .starbeans-mobile-dropdown .starbeans-mobile-dropdown-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transform: translateX(5px);
+    }
+    
+    /* Hide/show on scroll */
+    .starbeans-nav-container .starbeans-nav.starbeans-hide {
+      transform: translateY(-100%);
+    }
+    
+    /* Dropdown Slide Animation */
+    @keyframes starbeans-dropdown-slide-in {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    /* Mobile Responsive */
+    @media (max-width: 1212px) {
+      .starbeans-nav-container .starbeans-nav-links {
+        display: none;
+      }
+      
+      .starbeans-nav-container .starbeans-hamburger {
+        display: flex;
+      }
+      
+      .starbeans-nav-container .starbeans-nav {
+        padding: 12px 5%;
+      }
+      
+      .starbeans-nav-container .starbeans-logo-section img {
+        height: 50px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .starbeans-nav-container .starbeans-mobile-nav-item {
+        max-width: 280px;
+      }
+      
+      .starbeans-nav-container .starbeans-mobile-nav-link {
+        padding: 16px 20px;
+        font-size: 15px;
+      }
+    }
+    
+    /* Body padding */
+    body {
+      padding-top: 70px !important;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding-top: 64px !important;
+      }
+    }
 
-        .hamburger span {
-            display: block;
-            position: absolute;
-            height: 3px;
-            width: 100%;
-            background: white;
-            border-radius: 3px;
-            opacity: 1;
-            left: 0;
-            transform: rotate(0deg);
-            transition: .25s ease-in-out;
-        }
+    .extra_margin{
+      margin-bottom: 10px;
+    }
+  </style>
 
-        .hamburger span:nth-child(1) {
-            top: 0px;
-        }
+  <nav class="starbeans-nav">
+    <div class="starbeans-nav-wrapper">
+      <div class="starbeans-logo-section">
+        <a href="https://starbeansceylon.ceylonlensmedia.com/">
+          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo">
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <ul class="starbeans-nav-links">
+        <li class="starbeans-nav-item starbeans-has-dropdown">
+          <a href="#" class="starbeans-nav-link">Restaurants</a>
+          <ul class="starbeans-dropdown">
+            <li class="starbeans-dropdown-item"><a href="/restaurants/ocean_bistro.php" class="starbeans-dropdown-link">Ocean Bistro</a></li>
+            <li class="starbeans-dropdown-item"><a href="/restaurants/the_barn.php" class="starbeans-dropdown-link">The Barn</a></li>
+            <li class="starbeans-dropdown-item"><a href="/restaurants/take_five.php" class="starbeans-dropdown-link">Take Five</a></li>
+          </ul>
+        </li>
+        <li class="starbeans-nav-item"><a href="/booking.php" class="starbeans-nav-link">Booking</a></li>
+        <li class="starbeans-nav-item starbeans-has-dropdown">
+          <a href="#" class="starbeans-nav-link">Menu</a>
+          <ul class="starbeans-dropdown">
+            <li class="starbeans-dropdown-item"><a href="/food_energy.php" class="starbeans-dropdown-link">Food</a></li>
+            <li class="starbeans-dropdown-item"><a href="/beverages.php" class="starbeans-dropdown-link">Beverages</a></li>
+            <li class="starbeans-dropdown-item"><a href="/coffee.php" class="starbeans-dropdown-link">Coffee</a></li>
+          </ul>
+        </li>
+        <li class="starbeans-nav-item starbeans-has-dropdown">
+          <a href="#" class="starbeans-nav-link">Our Essence</a>
+          <ul class="starbeans-dropdown">
+            <li class="starbeans-dropdown-item"><a href="/vibes.php" class="starbeans-dropdown-link">Vibes</a></li>
+            <li class="starbeans-dropdown-item"><a href="/resilience.php" class="starbeans-dropdown-link">Resilience</a></li>
+            <li class="starbeans-dropdown-item"><a href="/sustainability.php" class="starbeans-dropdown-link">Sustainability</a></li>
+          </ul>
+        </li>
+        <li class="starbeans-nav-item"><a href="/about.php" class="starbeans-nav-link">About Us</a></li>
+        <li class="starbeans-nav-item"><a href="/contact.php" class="starbeans-nav-link">Contact Us</a></li>
+      </ul>
+      
+      <!-- Hamburger Menu Button -->
+      <button class="starbeans-hamburger" aria-label="Toggle Menu">
+        <span class="starbeans-hamburger-line"></span>
+        <span class="starbeans-hamburger-line"></span>
+        <span class="starbeans-hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
 
-        .hamburger span:nth-child(2) {
-            top: 10px;
-        }
-
-        .hamburger span:nth-child(3) {
-            top: 20px;
-        }
-
-        .hamburger.active span:nth-child(1) {
-            top: 10px;
-            transform: rotate(135deg);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-            left: -30px;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            top: 10px;
-            transform: rotate(-135deg);
-        }
-
-        /* Mobile menu overlay */
-        .mobile-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(5px);
-            z-index: 999; /* Below nav but above content */
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 1024px) {
-            nav {
-                padding: 15px 20px;
-            }
-            
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                max-width: 300px;
-                height: 100vh;
-                background: rgba(30, 30, 30, 0.95);
-                backdrop-filter: blur(20px);
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 100px 30px 30px;
-                transition: right 0.5s ease;
-                z-index: 1000;
-                border-left: 1px solid rgba(255, 255, 255, 0.1);
-            }
-
-            .nav-links.active {
-                right: 0;
-            }
-
-            .nav-links li {
-                width: 100%;
-                margin: 0;
-                padding: 10px 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            }
-
-            .nav-links li a {
-                padding: 12px 0;
-                font-size: 16px;
-                display: block;
-            }
-
-            .dropdown {
-                position: static;
-                width: 100%;
-                background: rgba(40, 40, 40, 0.8);
-                box-shadow: none;
-                border: none;
-                border-radius: 0;
-                max-height: 0;
-                overflow: hidden;
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-                transition: max-height 0.4s ease;
-                margin-top: 0;
-            }
-
-            .nav-links li:hover .dropdown {
-                max-height: 500px;
-            }
-
-            .dropdown li a {
-                padding: 12px 0 12px 20px;
-            }
-
-            .mobile-overlay.active {
-                display: block;
-            }
-            
-            /* Fix dropdown indicator on mobile */
-            .nav-links li:has(.dropdown) > a::after {
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%) rotate(45deg);
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="https://starbeansceylon.ceylonlensmedia.com/"><img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo"></a>
+  <!-- Mobile Menu Overlay -->
+  <div class="starbeans-mobile-overlay">
+    <button class="starbeans-mobile-close" aria-label="Close Menu"></button>
+    <nav class="starbeans-mobile-nav">
+      <div class="starbeans-mobile-nav-item">
+        <a href="#" class="starbeans-mobile-nav-link starbeans-mobile-dropdown-trigger">Restaurants</a>
+        <div class="starbeans-mobile-dropdown">
+          <a href="/restaurants/ocean_bistro.php" class="starbeans-mobile-dropdown-link">Ocean Bistro</a>
+          <a href="/restaurants/the_barn.php" class="starbeans-mobile-dropdown-link">The Barn</a>
+          <a href="/restaurants/take_five.php" class="starbeans-mobile-dropdown-link">Take Five</a>
         </div>
-
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+      </div>
+      
+      <div class="starbeans-mobile-nav-item">
+        <a href="/booking.php" class="starbeans-mobile-nav-link extra_margin">Booking</a>
+      </div>
+      
+      <div class="starbeans-mobile-nav-item">
+        <a href="#" class="starbeans-mobile-nav-link starbeans-mobile-dropdown-trigger">Menu</a>
+        <div class="starbeans-mobile-dropdown">
+          <a href="/food_energy.php" class="starbeans-mobile-dropdown-link">Food</a>
+          <a href="/beverages.php" class="starbeans-mobile-dropdown-link">Beverages</a>
+          <a href="/coffee.php" class="starbeans-mobile-dropdown-link">Coffee</a>
         </div>
-
-        <ul class="nav-links">
-            <li>
-                <a href="#">Restaurants</a>
-                <ul class="dropdown">
-                    <li><a href="/restaurants/ocean_bistro.php">Ocean Bistro</a></li>
-                    <li><a href="/restaurants/the_barn.php">The Barn</a></li>
-                    <li><a href="/restaurants/take_five.php">Take Five</a></li>
-                </ul>
-            </li>
-            <li><a href="/booking.php">Booking</a></li>
-            <li>
-                <a href="#">Menu</a>
-                <ul class="dropdown">
-                    <li><a href="/food_energy.php">Food</a></li>
-                    <li><a href="/beverages.php">Beverages</a></li>
-                    <li><a href="/coffee.php">Coffee</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Our Essence</a>
-                <ul class="dropdown">
-                    <li><a href="/vibes.php">Vibes</a></li>
-                    <li><a href="/resilience.php">Resilience</a></li>
-                    <li><a href="/sustainability.php">Sustainability</a></li>
-                </ul>
-            </li>
-            <li><a href="/about.php">About Us</a></li>
-            <li><a href="/contact.php">Contact Us</a></li>
-        </ul>
-
-        <div class="mobile-overlay"></div>
+      </div>
+      
+      <div class="starbeans-mobile-nav-item">
+        <a href="#" class="starbeans-mobile-nav-link starbeans-mobile-dropdown-trigger">Our Essence</a>
+        <div class="starbeans-mobile-dropdown">
+          <a href="/vibes.php" class="starbeans-mobile-dropdown-link">Vibes</a>
+          <a href="/resilience.php" class="starbeans-mobile-dropdown-link">Resilience</a>
+          <a href="/sustainability.php" class="starbeans-mobile-dropdown-link">Sustainability</a>
+        </div>
+      </div>
+      
+      <div class="starbeans-mobile-nav-item">
+        <a href="/about.php" class="starbeans-mobile-nav-link extra_margin">About Us</a>
+      </div>
+      
+      <div class="starbeans-mobile-nav-item">
+        <a href="/contact.php" class="starbeans-mobile-nav-link extra_margin">Contact Us</a>
+      </div>
     </nav>
+  </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-            const overlay = document.querySelector('.mobile-overlay');
-
-            hamburger.addEventListener('click', function() {
-                this.classList.toggle('active');
-                navLinks.classList.toggle('active');
-                overlay.classList.toggle('active');
-                
-                // Toggle body overflow when menu is open
-                document.body.style.overflow = this.classList.contains('active') ? 'hidden' : '';
-            });
-
-            overlay.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-                this.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-
-            // Close dropdowns when clicking elsewhere on mobile
-            if (window.innerWidth <= 1024) {
-                document.addEventListener('click', function(e) {
-                    const dropdowns = document.querySelectorAll('.dropdown');
-                    dropdowns.forEach(dropdown => {
-                        if (!dropdown.contains(e.target) && !dropdown.previousElementSibling.contains(e.target)) {
-                            dropdown.style.maxHeight = '0';
-                        }
-                    });
-                });
-
-                // Toggle dropdowns on mobile
-                const dropdownParents = document.querySelectorAll('.nav-links > li:has(.dropdown)');
-                dropdownParents.forEach(parent => {
-                    const link = parent.querySelector('a');
-                    link.addEventListener('click', function(e) {
-                        if (window.innerWidth <= 1024) {
-                            e.preventDefault();
-                            const dropdown = parent.querySelector('.dropdown');
-                            dropdown.style.maxHeight = dropdown.style.maxHeight === '0px' || !dropdown.style.maxHeight ? '500px' : '0';
-                        }
-                    });
-                });
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.querySelector('.starbeans-nav-container .starbeans-nav');
+      const hamburger = document.querySelector('.starbeans-nav-container .starbeans-hamburger');
+      const mobileOverlay = document.querySelector('.starbeans-nav-container .starbeans-mobile-overlay');
+      const mobileCloseBtn = document.querySelector('.starbeans-nav-container .starbeans-mobile-close');
+      const dropdownTriggers = document.querySelectorAll('.starbeans-nav-container .starbeans-mobile-dropdown-trigger');
+      
+      let lastScroll = 0;
+      
+      // Function to close mobile menu
+      function closeMobileMenu() {
+        hamburger.classList.remove('starbeans-active');
+        mobileOverlay.classList.remove('starbeans-active');
+        document.body.style.overflow = '';
+      }
+      
+      // Function to open mobile menu
+      function openMobileMenu() {
+        hamburger.classList.add('starbeans-active');
+        mobileOverlay.classList.add('starbeans-active');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      // Scroll behavior
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+          nav.classList.remove('starbeans-hide');
+          return;
+        }
+        
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          nav.classList.add('starbeans-hide');
+        } else {
+          nav.classList.remove('starbeans-hide');
+        }
+        
+        lastScroll = currentScroll;
+      });
+      
+      // Hamburger menu toggle
+      hamburger.addEventListener('click', function() {
+        if (mobileOverlay.classList.contains('starbeans-active')) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      });
+      
+      // Mobile close button
+      mobileCloseBtn.addEventListener('click', function() {
+        closeMobileMenu();
+      });
+      
+      // Mobile dropdown toggles
+      dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+          e.preventDefault();
+          const parentItem = this.closest('.starbeans-mobile-nav-item');
+          
+          // Close other dropdowns
+          document.querySelectorAll('.starbeans-nav-container .starbeans-mobile-nav-item').forEach(item => {
+            if (item !== parentItem) {
+              item.classList.remove('starbeans-dropdown-active');
             }
+          });
+          
+          // Toggle current dropdown
+          parentItem.classList.toggle('starbeans-dropdown-active');
         });
-    </script>
-</body>
-</html>
+      });
+      
+      // Close mobile menu when clicking overlay background
+      mobileOverlay.addEventListener('click', function(e) {
+        if (e.target === mobileOverlay) {
+          closeMobileMenu();
+        }
+      });
+      
+      // Close mobile menu on window resize if desktop breakpoint
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+          closeMobileMenu();
+          
+          // Close all mobile dropdowns
+          document.querySelectorAll('.starbeans-nav-container .starbeans-mobile-nav-item').forEach(item => {
+            item.classList.remove('starbeans-dropdown-active');
+          });
+        }
+      });
+      
+      // Handle escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileOverlay.classList.contains('starbeans-active')) {
+          closeMobileMenu();
+        }
+      });
+    });
+  </script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">

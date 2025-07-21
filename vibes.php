@@ -42,7 +42,13 @@
         </div>
       </div>
     </div>
+    <div class="elegant_images">
+          <img src="assets/images/barn_vibe.jpg" alt="">
+          <img src="assets/images/ocean_vibe.jpg" alt="">
+          <img src="assets/images/take_vibe.webp" alt="">
+      </div>
   </section>
+  
 
   <!-- Section 2: Modern Tech & Agility -->
   <section id="tech" class="modern-tech">

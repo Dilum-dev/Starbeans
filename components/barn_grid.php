@@ -115,7 +115,7 @@
             line-height: 1.3;
             transform: translateY(30px);
             transition: all 0.4s ease 0.2s;
-            color: #C5900A;
+            color: #31b62fff;
         }
 
         .grid-item:hover .overlay h3,
@@ -211,9 +211,9 @@
         .grid_title {
             font-family: "Playfair Display", serif !important;
             font-size: 3rem;
-            color: #0E0E0E;
+            color: #004d05ff;
             margin-top: 40px;
-            font-weight: lighter;
+            font-weight: 500;
         }
 
         .grid_sub {
@@ -274,7 +274,7 @@
         <div class="grid-item">
             <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-2-1.jpg" alt="image4">
             <div class="overlay">
-                <p>The BarnThe Barn</p>
+                <p>The Barn</p>
                 <h3>Crowd Vibe</h3>
             </div>
         </div>

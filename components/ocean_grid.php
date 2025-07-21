@@ -115,7 +115,7 @@
             line-height: 1.3;
             transform: translateY(30px);
             transition: all 0.4s ease 0.2s;
-            color: #C5900A;
+            color: #71CDFF;
         }
 
         .grid-item:hover .overlay h3,
@@ -211,9 +211,9 @@
         .grid_title {
             font-family: "Playfair Display", serif !important;
             font-size: 3rem;
-            color: #0E0E0E;
+            color: #254887;
             margin-top: 40px;
-            font-weight: lighter;
+            font-weight: 500;
         }
 
         .grid_sub {

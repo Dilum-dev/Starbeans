@@ -12,10 +12,10 @@
 .reviews-section {
   background: linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(248, 248, 248, 0.95) 100%
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(248, 248, 248, 0.27) 100%
     ),
-    url("https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/welipenna-.png");
+    url("../assets/images/take_exp.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -51,10 +51,10 @@
 .reviews-header h2 {
   font-size: 3rem !important;
   font-weight: 800;
-  color: #82623d;
+  color: #520B0C;
   margin-bottom: 20px;
   letter-spacing: -1.2px;
-  background: linear-gradient(90deg, #82623d, #82623d);
+  background: linear-gradient(90deg, #520B0C, #520B0C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -62,10 +62,10 @@
 .reviews-header h3 {
   font-size: 3rem;
   font-weight: 800;
-  color: #82623d;
+  color: #520B0C;
   margin-bottom: 20px;
   letter-spacing: -1.2px;
-  background: linear-gradient(90deg, #82623d, #82623d);
+  background: linear-gradient(90deg, #520B0C, #520B0C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -120,7 +120,7 @@
   content: '"';
   font-family: "Playfair Display", serif;
   font-size: 6rem;
-  color: #82623d;
+  color: #520B0C;
   position: absolute;
   top: -10px;
   left: 30px;
@@ -139,7 +139,7 @@
 .review-author {
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
-  color: #82623d;
+  color: #520B0C;
   margin-bottom: 5px;
   font-weight: 600;
 }
@@ -189,7 +189,7 @@
 }
 
 .dot.active {
-  background: #82623d;
+  background: #520B0C;
   transform: scale(1.2);
   box-shadow: 0 0 10px rgba(40, 141, 38, 0.5);
 }
@@ -199,8 +199,8 @@
   top: 50%;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.8) !important;
-  border: 2px solid #82623d !important;
-  color: #82623d !important;
+  border: 2px solid #520B0C !important;
+  color: #520B0C !important;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -215,7 +215,7 @@
 }
 
 .slider-nav:hover {
-  background: #82623d !important;
+  background: #520B0C !important;
   color: white !important;
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 5px 15px rgba(40, 141, 38, 0.3);

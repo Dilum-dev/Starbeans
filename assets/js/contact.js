@@ -3,20 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Initialize GSAP animations
       gsap.registerPlugin(ScrollTrigger);
       
-      // Parallax effect for hero background
-      const parallaxBg = document.querySelector('.parallax-bg');
-      if (parallaxBg) {
-        gsap.to(parallaxBg, {
-          yPercent: 20,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: '.hero-section',
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true
-          }
-        });
-      }
       
       // Animate elements on scroll
       gsap.utils.toArray('.section-title, .contact-item, .location-card, .contact-form').forEach(element => {

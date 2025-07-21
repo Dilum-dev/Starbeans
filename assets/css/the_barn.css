@@ -134,12 +134,9 @@ html {
 
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 768px) {
-  .video-section {
-    height: 100vh; /* Reduced height for mobile */
-  }
+
 
   .content {
-    transform: translateY(5vh); /* Less vertical offset */
     padding: 10px;
     width: 100%; /* Ensure content doesn't exceed viewport */
     max-width: 100vw; /* Prevent horizontal overflow */
@@ -162,7 +159,6 @@ html {
 
   .title,
   .subtitle {
-    font-size: 3.5rem !important;
     word-break: break-word; /* Prevent long words from causing overflow */
   }
 
@@ -186,7 +182,6 @@ html {
 
   .title,
   .subtitle {
-    font-size: 2.8rem !important;
     line-height: 1.2; /* Better spacing for small screens */
   }
 
@@ -743,10 +738,30 @@ select {
   margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 4rem !important;
+  }
+  .dish-title {
+    font-size: 2.5rem !important;
+  }
+  .reviews-title {
+    font-size: 3rem !important;
+  }
+  
+  .google_map iframe {
+    width: 90%;
+    height: 400px;
+  }
+}
+
 @media (max-width: 430px) {
   .title {
     font-size: 2.5rem !important;
     margin-top: -20px;
+  }
+  .subtitle{
+    font-size: 3rem !important;
   }
 
   .gallery-header h2 {
@@ -764,22 +779,5 @@ select {
 
   .gallery-header p {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .subtitle {
-    font-size: 4rem !important;
-  }
-  .dish-title {
-    font-size: 2.5rem !important;
-  }
-  .reviews-title {
-    font-size: 3rem !important;
-  }
-
-  .google_map iframe {
-    width: 90%;
-    height: 400px;
   }
 }

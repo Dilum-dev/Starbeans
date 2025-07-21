@@ -27,6 +27,10 @@
       <div class="hero-line"></div>
       <p class="hero-subtitle">Get in Touch</p>
     </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
   </header>
 
   <!-- Contact Section -->

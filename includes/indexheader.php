@@ -14,6 +14,7 @@
         }
 
         nav {
+            font-family: 'Roboto';
             position: fixed;
             top: 0;
             left: 0;
