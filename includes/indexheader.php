@@ -211,9 +211,9 @@
                 <li class="dropdown" style="--i: 1">
                     <a href="#">RESTAURANTS</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">OCEAN BISTRO</a></li>
-                        <li><a href="#">THE BARN</a></li>
-                        <li><a href="#">TAKE FIVE</a></li>
+                        <li><a href="/restaurants/ocean_bistro.php">OCEAN BISTRO</a></li>
+                        <li><a href="/restaurants/the_barn.php">THE BARN</a></li>
+                        <li><a href="/restaurants/take_five.php">TAKE FIVE</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" style="--i: 2">

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -185,7 +185,7 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: rgba(113, 205, 255, 0.);
+            background: rgba(113, 205, 255, 0.32);
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -334,16 +334,12 @@
                                 <span class="star">★</span>
                             </div>
                             <p class="review-text">
-                               A remarkable restaurant in the Galle Old town.
-The restaurant is located in a very antique colonial building, absolutely clean and well preserved.
-Food & beverage offer is quite huge, tasty and portions are very abundant.
-I think I had the best Tuna Steak of my life, perfectly rare and chunky 😋.
-Staff is very welcoming and polite.
-Not exactly cheap prices but absolutely matching with the quality of food and service.
-Absolutely recommended 💯
+                               A good restaurant with Western food. They serve quickly and are very friendly. 
+                               The interior is very comfortable with good air conditioning. I recommend the pad thai
                             </p>
                             <div class="review-author">
-Caius Bernardi</div>
+
+Paula Gonzalez</div>
                            <!-- <div class="review-location">Mumbai, India</div> -->
                             <div class="review-platform">Google Reviews</div>
                         </div>
