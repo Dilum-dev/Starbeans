@@ -77,7 +77,7 @@
   .starbeans-footer {
     background: #000;
     color: #ccc;
-    font-family: 'BIZ UDPMincho', serif;
+    font-family: 'BIZ UDPMincho', serif !important;
     padding: 50px 5% 30px;
     font-size: 14px;
     line-height: 1.6;
