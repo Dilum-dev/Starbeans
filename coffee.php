@@ -129,10 +129,10 @@
       </div>
       
       <div style="text-align: center;">
-        <button class="menu-button">
+        <!-- <button class="menu-button"> 
           <span>View Full Coffee Menu</span>
           <span class="menu-icon">→</span>
-        </button>
+        </button>-->
       </div>
     </div>
   </section>

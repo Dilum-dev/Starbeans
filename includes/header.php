@@ -309,7 +309,7 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="https://starbeans.ceylonlensmedia.com/"><img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo"></a>
+            <a href="https://starbeansceylon.ceylonlensmedia.com/"><img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo"></a>
         </div>
 
         <div class="hamburger">
