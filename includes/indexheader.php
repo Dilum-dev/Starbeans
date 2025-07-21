@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Transparent Navbar</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -29,7 +29,7 @@
         }
 
         nav.scrolled {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0);
         }
 
         nav.hide {
@@ -56,9 +56,9 @@
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 12px;
             font-weight: 400;
-            letter-spacing: 0.5px;
+            letter-spacing: 3px;
             transition: all 0.3s ease;
             padding: 8px 0;
             position: relative;
@@ -93,7 +93,7 @@
             top: 100%;
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.7);
             min-width: 200px;
             border-radius: 4px;
             padding: 15px 0;
@@ -111,7 +111,7 @@
         }
 
         .dropdown-content a {
-            font-size: 1rem;
+            font-size: 12px;
             font-weight: 300;
         }
 
@@ -209,22 +209,22 @@
         <div class="nav-container">
             <ul class="nav-links">
                 <li class="dropdown" style="--i: 1">
-                    <a href="#">Restaurant</a>
+                    <a href="#">RESTAURANTS</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Ocean Bistro</a></li>
-                        <li><a href="#">The Barn</a></li>
-                        <li><a href="#">Take Five</a></li>
+                        <li><a href="/restaurants/ocean_bistro.php">OCEAN BISTRO</a></li>
+                        <li><a href="/restaurants/the_barn.php">THE BARN</a></li>
+                        <li><a href="/restaurants/take_five.php">TAKE FIVE</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" style="--i: 2">
-                    <a href="#">Our Essence</a>
+                    <a href="#">OUR ESSENCE</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Vibes</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Resilience</a></li>
+                        <li><a href="/vibes.php">VIBES</a></li>
+                        <li><a href="/sustainability.php">SUSTAINABILITY</a></li>
+                        <li><a href="/resilience.php">RESILIENCE</a></li>
                     </ul>
                 </li>
-                <li style="--i: 3"><a href="#">Contact</a></li>
+                <li style="--i: 3"><a href="/contact.php">CONTACT</a></li>
             </ul>
 
             <div class="hamburger" id="hamburger">

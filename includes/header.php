@@ -309,7 +309,7 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="https://starbeans.ceylonlensmedia.com/"><img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo"></a>
+            <a href="https://starbeansceylon.ceylonlensmedia.com/"><img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/3x1.png" alt="Starbeans Logo"></a>
         </div>
 
         <div class="hamburger">
@@ -333,15 +333,15 @@
                 <ul class="dropdown">
                     <li><a href="/food_energy.php">Food</a></li>
                     <li><a href="/beverages.php">Beverages</a></li>
-                    <li><a href="/about.php">Coffee</a></li>
+                    <li><a href="/coffee.php">Coffee</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">Our Essence</a>
                 <ul class="dropdown">
-                    <li><a href="https://starbeans.ceylonlensmedia.com/vibes/">Vibes</a></li>
-                    <li><a href="https://starbeans.ceylonlensmedia.com/resilience/">Resilience</a></li>
-                    <li><a href="https://starbeans.ceylonlensmedia.com/sustainability/">Sustainability</a></li>
+                    <li><a href="/vibes.php">Vibes</a></li>
+                    <li><a href="/resilience.php">Resilience</a></li>
+                    <li><a href="/sustainability.php">Sustainability</a></li>
                 </ul>
             </li>
             <li><a href="/about.php">About Us</a></li>
