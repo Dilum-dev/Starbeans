@@ -122,7 +122,9 @@ include '../includes/barn_header.php';
     </div>
   </div>
   <div class="menu-buttons-container">
-    <button class="menu-button active" onclick="window.open('../assets/menu_pages.pdf', '_blank');">Our Menu</button>
+    <button class="menu-button active" onclick="window.open('../assets/THE BARN - FOOD & DRINK.pdf', '_blank');">Food & Drink</button>
+    <button class="menu-button" onclick="window.open('../assets/THE BARN - WINE & LIQUOR.pdf', '_blank');">Wine & Liquor</button>
+    <button class="menu-button" onclick="window.open('../assets/pizza-menu.pdf', '_blank');">Pizza Menu</button>
   </div>
   <!-- Modal Popup -->
   <div id="pastaModal" class="modal">

@@ -122,7 +122,7 @@ include '../includes/takefive_header.php';
     </div>
   </div>
   <div class="menu-buttons-container">
-    <button class="menu-button active" onclick="window.open('../assets/menu_pages.pdf', '_blank');">Our Menu</button>
+    <button class="menu-button active" onclick="window.open('../assets/Take five menu.pdf', '_blank');">Our Menu</button>
   </div>
   <!-- Modal Popup -->
   <div id="pastaModal" class="modal">
