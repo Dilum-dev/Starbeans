@@ -30,7 +30,7 @@ include '../includes/ocean_header.php';
 <body>
   <section class="video-section">
     <div class="video-background">
-      <video autoplay muted loop>
+      <video autoplay muted loop playsinline>
         <source src="../assets/video/ocean_intro.mp4" type="video/mp4">
       </video>
     </div>
