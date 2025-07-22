@@ -248,15 +248,15 @@
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/starbean-6-1.jpg" alt="image1">
+            <img src="../assets/images/oceanGrid/oimg1.webp" alt="image1">
             <div class="overlay">
                 <p>Ocean Bistro</p>
-                <h3>View</h3>
+                <h3>Sweet Moments</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-4-1.jpg" alt="image2">
+            <img src="../assets/images/oceanGrid/oimg2.webp" alt="image2">
             <div class="overlay">
                 <p>Ocean Bistro</p>
                 <h3>Ocean Glow</h3>
@@ -264,15 +264,15 @@
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-1536x1152.webp" alt="image3">
+            <img src="../assets/images/oceanGrid/oimg3.webp" alt="image3">
             <div class="overlay">
                 <p>Ocean Bistro</p>
-                <h3></h3>
+                <h3>Fired with Passion</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-2-1.jpg" alt="image4">
+            <img src="../assets/images/oceanGrid/oimg4.webp" alt="image4">
             <div class="overlay">
                 <p>Ocean Bistro</p>
                 <h3>Crowd Vibe</h3>
@@ -280,7 +280,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-9-1.jpg" alt="image5">
+            <img src="../assets/images/oceanGrid/oimg5.webp" alt="image5">
             <div class="overlay">
                 <p>Ocean Bistro</p>
                 <h3>Ocean's Bounty</h3>
@@ -288,10 +288,10 @@
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-7-1.jpg" alt="image6">
+            <img src="../assets/images/oceanGrid/oimg6.webp" alt="image6">
             <div class="overlay">
                 <p>Ocean Bistro</p>
-                <h3></h3>
+                <h3>Fort Views</h3>
             </div>
         </div>
     </div>

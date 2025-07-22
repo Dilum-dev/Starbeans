@@ -248,50 +248,50 @@
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/starbean-6-1.jpg" alt="image1">
+            <img src="../assets/images/takeGrid/timg1.webp" alt="image1">
             <div class="overlay">
                 <p>Take Five</p>
-                <h3>View</h3>
+                <h3>Aura</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-4-1.jpg" alt="image2">
+            <img src="../assets/images/takeGrid/timg2.webp" alt="image2">
             <div class="overlay">
                 <p>Take Five</p>
-                <h3>Ocean Glow</h3>
+                <h3>The Vibe</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-1536x1152.webp" alt="image3">
+            <img src="../assets/images/takeGrid/timg3.webp" alt="image3">
             <div class="overlay">
                 <p>Take Five</p>
-                <h3></h3>
+                <h3>Culinary Delight</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-2-1.jpg" alt="image4">
+            <img src="../assets/images/takeGrid/timg4.webp" alt="image4">
             <div class="overlay">
                 <p>Take Five</p>
-                <h3>Crowd Vibe</h3>
+                <h3>Experience</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-9-1.jpg" alt="image5">
+            <img src="../assets/images/takeGrid/timg5.webp" alt="image5">
             <div class="overlay">
                 <p>Take Five</p>
-                <h3>Ocean's Bounty</h3>
+                <h3>Ambience</h3>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2024/09/Starbeans-7-1.jpg" alt="image6">
+            <img src="../assets/images/takeGrid/timg6.webp" alt="image6">
             <div class="overlay">
                 <p>Take Five</p>
-                <h3></h3>
+                <h3>Interior</h3>
             </div>
         </div>
     </div>
