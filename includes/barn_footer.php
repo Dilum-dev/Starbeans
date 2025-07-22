@@ -2,15 +2,15 @@
   <!-- Top Section -->
   <div class="footer-top">
     <div class="footer-brand">
-      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/ella-png-.png" 
-           alt="Starbeans Logo" 
-           class="footer-logo">
+      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/ella-png-.png"
+        alt="Starbeans Logo"
+        class="footer-logo">
       <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>
     </div>
-    
+
     <div class="footer-award">
-      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif" 
-           alt="Travelers' Choice Award">
+      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
+        alt="Travelers' Choice Award">
       <span>Travelers' Choice Award</span>
     </div>
   </div>
@@ -20,27 +20,27 @@
     <div class="footer-section">
       <h5>About</h5>
       <ul>
-        <li><a href="https://starbeans.ceylonlensmedia.com/about-us-2/">Our Story</a></li>
-        <li><a href="https://starbeans.ceylonlensmedia.com/contact/">Locations</a></li>
-        <li><a href="https://starbeans.ceylonlensmedia.com/resilience/">Resilience</a></li>
-        <li><a href="https://starbeans.ceylonlensmedia.com/sustainability/">Sustainability</a></li>
+        <li><a href="../about.php">Our Story</a></li>
+        <li><a href="../contact.php">Locations</a></li>
+        <li><a href="../resilience.php">Resilience</a></li>
+        <li><a href="../sustainability.php">Sustainability</a></li>
       </ul>
     </div>
-    
+
     <div class="footer-divider"></div>
-    
+
     <div class="footer-section">
       <h5>Explore</h5>
       <ul>
-        <li><a href="https://starbeans.ceylonlensmedia.com/food-energy/">Menu</a></li>
-        <li><a href="https://starbeans.ceylonlensmedia.com/vibes/">Vibes</a></li>
-        <li><a href="https://starbeans.ceylonlensmedia.com/coffee-2/">Coffee</a></li>
-        <li><a href="https://starbeans.ceylonlensmedia.com/beverages/">Beverages</a></li>
+        <li><a href="../food_energy.php">Menu</a></li>
+        <li><a href="../vibes.php">Vibes</a></li>
+        <li><a href="../coffee.php">Coffee</a></li>
+        <li><a href="../beverages.php">Beverages</a></li>
       </ul>
     </div>
-    
+
     <div class="footer-divider"></div>
-    
+
     <div class="footer-section">
       <h5>Contact</h5>
       <ul>
@@ -51,37 +51,37 @@
         <li><a href="mailto:info@starbeansceylon.com">info@starbeansceylon.com</a></li>
       </ul>
     </div>
-    
+
     <div class="footer-divider"></div>
-    
+
     <div class="footer-section">
       <h5>Connect</h5>
       <ul class="social-links">
         <li><a href="https://www.facebook.com/starbeansella/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
         <li><a href="https://www.instagram.com/the_barn_by_starbeans/"><i class="fab fa-instagram"></i> Instagram</a></li>
-       <!-- <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> -->
+        <!-- <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> -->
         <li><a href="https://www.tripadvisor.com/Restaurant_Review-g616035-d14762812-Reviews-The_Barn_By_Starbeans-Ella_Uva_Province.html"><i class="fab fa-tripadvisor"></i> TripAdvisor</a></li>
       </ul>
     </div>
   </div>
 
- <!-- Footer Bottom -->
-<div class="footer-bottom">
-  <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
-  <p class="powered-by">Powered by <a href="https://www.geminiflare.com" target="_blank" rel="noopener noreferrer" class="glink">Geminiflare</a></p>
-</div>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
+    <p class="powered-by">Powered by <a href="https://www.geminiflare.com" target="_blank" rel="noopener noreferrer" class="glink">Geminiflare</a></p>
+  </div>
 </div>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap');
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-    .glink{
+  .glink {
     text-decoration: none !important;
     color: white;
   }
 
-  .glink:hover{
+  .glink:hover {
     color: #ccc;
   }
 
@@ -132,7 +132,7 @@
   }
 
   .footer-award img {
-    height: 50px;
+    height: 100px;
     width: auto;
   }
 
@@ -203,7 +203,7 @@
   .footer-bottom {
     text-align: center;
     margin-top: 30px;
-    
+
   }
 
   .footer-bottom p {
@@ -223,17 +223,17 @@
       flex-wrap: wrap;
       gap: 30px 0;
     }
-    
+
     .footer-section {
       flex: 0 0 50%;
       padding: 0 20px;
     }
-    
+
     .footer-divider:nth-child(2),
     .footer-divider:nth-child(6) {
       display: none;
     }
-    
+
     .footer-divider:nth-child(4) {
       height: 1px;
       width: 100%;
@@ -263,12 +263,12 @@
       flex-direction: column;
       gap: 30px;
     }
-    
+
     .footer-section {
       flex: 1;
       padding: 0;
     }
-    
+
     .footer-divider {
       display: none;
     }
