@@ -184,6 +184,15 @@ body {
   }
 }
 
+@media (max-width: 375px){
+  .content{
+    height: auto;
+  }
+  .video-background{
+    height: auto;
+  }
+}
+
 @media (max-width: 360px) {
   .title {
     font-size: 2rem;
