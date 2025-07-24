@@ -184,14 +184,6 @@ body {
   }
 }
 
-@media (max-width: 375px){
-  .content{
-    height: auto;
-  }
-  .video-background{
-    height: auto;
-  }
-}
 
 @media (max-width: 360px) {
   .title {
@@ -199,5 +191,14 @@ body {
   }
   .location-link {
     max-width: 260px; /* Slightly smaller for very small screens */
+  }
+}
+
+@media (max-width: 375px){
+  .content{
+    height: auto;
+  }
+  .video-background{
+    height: auto;
   }
 }
