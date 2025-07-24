@@ -1,14 +1,32 @@
 <?php include 'includes/indexheader.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starbeans Ceylon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.csshttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbeans Ceylon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.csshttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        @media (max-width: 480px) {
+            .video-background {
+                height: auto;
+            }
+
+            .content {
+                padding: 1.5rem;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                height: auto;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
     <div class="video-background">
         <video autoplay muted loop playsinline id="bg-video">
@@ -17,14 +35,14 @@
     </div>
 
     <div class="content">
-      <div class="logo-container">
+        <div class="logo-container">
             <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png" alt="Starbeans Logo" class="main-logo">
         </div>
 
         <h1 class="title">Starbeans Ceylon</h1>
 
         <p class="description">
-            Where quality meets comfort. Since 2010, Starbeans has been serving up flavorful dishes, 
+            Where quality meets comfort. Since 2010, Starbeans has been serving up flavorful dishes,
             rich coffee, and heartfelt hospitality—creating memorable moments for locals and travelers alike.
         </p>
 
@@ -39,10 +57,11 @@
                 <img src="assets/images/take-lg.png" alt="Take Five">
             </a>
         </div>
-</div>
+    </div>
 
-  <script src="assets/js/index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <?php include 'includes/footer.php'; ?>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <?php include 'includes/footer.php'; ?>
 </body>
+
 </html>
