@@ -115,16 +115,17 @@ body {
   }
 }
 
-@media (max-width: 395px){
-  .content{
+/* @media (max-width: 395px){
+
+} */
+
+@media (max-width: 480px) {
+    .content{
     height: auto;
   }
   .video-background{
     height: auto;
   }
-}
-
-@media (max-width: 480px) {
   .content {
     padding: 1.5rem;
     justify-content: flex-start;
