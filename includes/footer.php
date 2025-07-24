@@ -1,73 +1,3 @@
-<footer>
-
-  <div class="starbeans-footer" onmouseover="this.style.transform='scale(1)';">
-    <!-- Top Section -->
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png"
-          alt="Starbeans Logo"
-          class="footer-logo">
-        <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>
-      </div>
-
-      <div class="footer-award">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
-          alt="Travelers' Choice Award">
-        <span>Travelers' Choice Award</span>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="footer-main">
-      <div class="footer-section">
-        <h5>About</h5>
-        <ul>
-          <li><a href="/about.php">Our Story</a></li>
-          <li><a href="/vibes.php">Vibes</a></li>
-          <li><a href="/resilience.php">Resilience</a></li>
-          <li><a href="/sustainabilty.php">Sustainability</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-divider"></div>
-
-      <div class="footer-section">
-        <h5>Explore</h5>
-        <ul>
-          <li><a href="/contact.php">Contact</a></li>
-          <li><a href="/booking.php">Reserve a table</a></li>
-          <li><a href="/coffee.php">Coffee</a></li>
-          <li><a href="/food_energy.php">Food energy</a></li>
-        </ul>
-      </div>
-
-
-
-
-
-      <div class="footer-divider"></div>
-
-      <div class="footer-section newsletter-section">
-        <h5>Stay Updated</h5>
-        <div class="newsletter-content">
-          <p class="newsletter-text">Subscribe for exclusive offers and updates</p>
-          <div class="newsletter-form">
-            <input type="email" placeholder="Your email address" class="newsletter-input">
-            <button class="newsletter-button">
-              <i class="fa-solid fa-envelope-open"></i>
-            </button>
-          </div>
-          <p class="newsletter-note">We respect your privacy. Unsubscribe anytime.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
-      <p class="powered-by">Powered by Geminiflare</p>
-    </div>
-  </div>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap');
@@ -366,5 +296,76 @@
       }
     }
   </style>
+
+<footer>
+  <div class="starbeans-footer" onmouseover="this.style.transform='scale(1)';">
+    <!-- Top Section -->
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png"
+          alt="Starbeans Logo"
+          class="footer-logo">
+        <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>
+      </div>
+
+      <div class="footer-award">
+        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
+          alt="Travelers' Choice Award">
+        <span>Travelers' Choice Award</span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="footer-main">
+      <div class="footer-section">
+        <h5>About</h5>
+        <ul>
+          <li><a href="/about.php">Our Story</a></li>
+          <li><a href="/vibes.php">Vibes</a></li>
+          <li><a href="/resilience.php">Resilience</a></li>
+          <li><a href="/sustainabilty.php">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-section">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/contact.php">Contact</a></li>
+          <li><a href="/booking.php">Reserve a table</a></li>
+          <li><a href="/coffee.php">Coffee</a></li>
+          <li><a href="/food_energy.php">Food energy</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-section newsletter-section">
+        <h5>Stay Updated</h5>
+        <div class="newsletter-content">
+          <p class="newsletter-text">Subscribe for exclusive offers and updates</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input">
+            <button class="newsletter-button">
+              <i class="fa-solid fa-envelope-open"></i>
+            </button>
+          </div>
+          <p class="newsletter-note">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
+      <p class="powered-by">Powered by Geminiflare</p>
+    </div>
+  </div>
+
 
 </footer>

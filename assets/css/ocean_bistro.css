@@ -189,6 +189,7 @@ html {
 
   .award-logo {
     max-width: 60px !important;
+    margin-top: 0px !important;
   }
 }
 

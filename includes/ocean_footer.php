@@ -1,76 +1,3 @@
-<div class="starbeans-footer">
-  <!-- Top Section -->
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/galle-png-.png"
-        alt="Starbeans Logo"
-        class="footer-logo">
-      <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>
-    </div>
-
-    <div class="footer-award">
-      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
-        alt="Travelers' Choice Award">
-      <span>Travelers' Choice Award</span>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-  <div class="footer-main">
-    <div class="footer-section">
-      <h5>About</h5>
-      <ul>
-        <li><a href="../about.php">Our Story</a></li>
-        <li><a href="../contact.php">Locations</a></li>
-        <li><a href="../resilience.php">Resilience</a></li>
-        <li><a href="../sustainability.php">Sustainability</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-section">
-      <h5>Explore</h5>
-      <ul>
-        <li><a href="../food_energy.php">Menu</a></li>
-        <li><a href="../vibes.php">Vibes</a></li>
-        <li><a href="../coffee.php">Coffee</a></li>
-        <li><a href="../beverages.php">Beverages</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-section">
-      <h5>Contact</h5>
-      <ul>
-        <li>No.4,First Floor</li>
-        <li>Dutch Hospital Shopping </li>
-        <li></li>Fort,Galle<li></li>
-        <li>+94 912 235 500</li>
-        <li><a href="mailto:info@starbeansceylon.com">info@starbeansceylon.com</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-section">
-      <h5>Connect</h5>
-      <ul class="social-links">
-        <li><a href="https://www.facebook.com/starbeansocean/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-        <li><a href="https://www.instagram.com/starbeans_oceanbistro/?hl=en"><i class="fab fa-instagram"></i> Instagram</a></li>
-        <!-- <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> -->
-        <li><a href="https://www.tripadvisor.com/Restaurant_Review-g297896-d8015592-Reviews-Ocean_Bistro_by_Starbeans-Galle_Galle_District_Southern_Province.html"><i class="fab fa-tripadvisor"></i> TripAdvisor</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Footer Bottom -->
-  <div class="footer-bottom">
-    <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
-    <p class="powered-by">Powered by <a href="https://www.geminiflare.com" target="_blank" rel="noopener noreferrer" class="glink">Geminiflare</a></p>
-  </div>
-</div>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap');
@@ -156,7 +83,7 @@
 
   .footer-divider {
     width: 1px;
-    background: #403d3d;
+    background: #486883ff;
   }
 
   .footer-section h5 {
@@ -273,4 +200,87 @@
       display: none;
     }
   }
+
+  .trip a{
+    color: white !important;
+    opacity: 0.5 !important;
+  }
+
+  .trip a:hover{
+    opacity: 1 !important;
+  }
 </style>
+
+<div class="starbeans-footer">
+  <!-- Top Section -->
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../assets/images/footer/ocean_footer.webp"
+        alt="Starbeans Logo"
+        class="footer-logo">
+      <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>
+    </div>
+
+    <div class="footer-award">
+      <img src="../assets/images/footer/trip_footer.avif"
+        alt="Travelers' Choice Award">
+      <span>Travelers' Choice Award</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="footer-main">
+    <div class="footer-section">
+      <h5>About</h5>
+      <ul>
+        <li><a href="/about.php">Our Story</a></li>
+        <li><a href="/contact.php">Locations</a></li>
+        <li><a href="/resilience.php">Resilience</a></li>
+        <li><a href="/sustainability.php">Sustainability</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-section">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="/food_energy.php">Menu</a></li>
+        <li><a href="/vibes.php">Vibes</a></li>
+        <li><a href="/coffee.php">Coffee</a></li>
+        <li><a href="/beverages.php">Beverages</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-section">
+      <h5>Contact</h5>
+      <ul>
+        <li>No.4,First Floor</li>
+        <li>Dutch Hospital Shopping </li>
+        <li></li>Fort,Galle<li></li>
+        <li>+94 912 235 500</li>
+        <li><a href="mailto:info@starbeansceylon.com">info@starbeansceylon.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-section">
+      <h5>Connect</h5>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/starbeansocean/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="https://www.instagram.com/starbeans_oceanbistro/?hl=en"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <!-- <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> -->
+        <li class="trip"><a href="https://www.tripadvisor.com/Restaurant_Review-g297896-d8015592-Reviews-Ocean_Bistro_by_Starbeans-Galle_Galle_District_Southern_Province.html"><i class=""><img src="../assets/images/tripadvisor_logo.png" alt="" width="12px" height="auto" style="margin-left:2px;"></i> TripAdvisor</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Starbeans Ceylon — All rights reserved.</p>
+    <p class="powered-by">Powered by <a href="https://www.geminiflare.com" target="_blank" rel="noopener noreferrer" class="glink">Geminiflare</a></p>
+  </div>
+</div>

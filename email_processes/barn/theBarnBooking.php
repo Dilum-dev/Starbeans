@@ -1,9 +1,16 @@
+<?php 
+
+    @include "../../includes/barn_header.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbeans Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
 
 	      :root{
@@ -1584,7 +1591,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="footer-top">
         <div class="footer-brand">
           <img
-            src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png"
+            src="../../assets/images/footer/barn_footer.webp"
             alt="Starbeans Logo"
             class="footer-logo"
           />
@@ -1596,7 +1603,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <div class="footer-award">
           <img
-            src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
+            src="../../assets/images/footer/trip_footer.avif"
             alt="Travelers' Choice Award"
           />
           <span>Travelers' Choice Award</span>
@@ -1608,19 +1615,15 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="footer-section">
           <h5>About</h5>
           <ul>
-            <li>
-              <a href="https://starbeans.ceylonlensmedia.com/about-us-2/"
-                >Our Story</a
-              >
-            </li>
-            <li>
-              <a href="https://starbeans.ceylonlensmedia.com/about-us-2/#legacy"
-                >Our Legacy</a
-              >
-            </li>
-            <li><a href="#">Employees & Stakeholders</a></li>
-            <li><a href="#">Sustainability</a></li>
-          </ul>
+          <li>
+            <a href="/about.php">Our Story</a>
+          </li>
+          <li>
+            <a href="/vibes.php">Vibes</a>
+          </li>
+          <li><a href="/resilience.php">Resilience</a></li>
+          <li><a href="/sustainability.php">Sustainability</a></li>
+        </ul>
         </div>
 
         <div class="footer-divider"></div>
@@ -1628,10 +1631,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="footer-section">
           <h5>Explore</h5>
           <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Vibes</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+          <li><a href="/booking.php">Reserve a table</a></li>
+          <li><a href="/coffee.php">Coffee</a></li>
+          <li><a href="/food_energy.php">Food energy</a></li>
           </ul>
         </div>
 
