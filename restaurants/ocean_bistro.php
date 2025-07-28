@@ -247,6 +247,11 @@ include '../includes/ocean_header.php';
         </svg>
       </a>
     </div>
+
+    <?php
+    include '../email_processes/bistro/contactOcean.php';
+    ?>
+    
   </div>
 
   <?php

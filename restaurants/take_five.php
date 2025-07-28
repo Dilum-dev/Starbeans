@@ -246,6 +246,12 @@ include '../includes/takefive_header.php';
         </svg>
       </a>
     </div> -->
+
+    <?php
+    include '../email_processes/take/contactTake.php';
+    ?>
+
+
   </div>
 
   <?php

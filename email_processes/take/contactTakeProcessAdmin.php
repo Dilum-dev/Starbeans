@@ -213,6 +213,12 @@ try {
                         <a href="tel:'.$phone.'">'.$phone.'</a>
                     </div>
                 </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Restaurant:</div>
+                    <div class="detail-value"><strong>Take Five</strong></div>
+                </div>
+
                 
             </div>
             

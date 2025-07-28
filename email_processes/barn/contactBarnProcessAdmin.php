@@ -212,6 +212,12 @@ try {
                     <div class="detail-value contact-links">
                         <a href="tel:'.$phone.'">'.$phone.'</a>
                     </div>
+
+                    <div class="detail-row">
+                    <div class="detail-label">Restaurant:</div>
+                    <div class="detail-value contact-links">
+                        <a href="">The Barn</a>
+                    </div>
                 </div>
                 
             </div>

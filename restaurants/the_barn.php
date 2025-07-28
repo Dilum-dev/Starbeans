@@ -248,6 +248,10 @@ include '../includes/barn_header.php';
         </svg>
       </a>
     </div>
+
+    <?php
+    include '../email_processes/barn/contactBarn.php';
+    ?>
   </div>
 
   <?php

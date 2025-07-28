@@ -44,7 +44,7 @@
             <div class="gallery-item span-1">
                 <img src="../assets/images/gallery/barn/3.webp" alt="">
             </div>
-            <div class="gallery-item span-tall">
+            <div class="gallery-item span-1">
                 <img src="../assets/images/gallery/barn/4.webp" alt="">
             </div>
             <div class="gallery-item span-1">
@@ -59,7 +59,7 @@
             <div class="gallery-item span-wide-tall">
                 <img src="../assets/images/gallery/barn/8.webp" alt="">
             </div>
-            <div class="gallery-item span-1">
+            <div class="gallery-item span-2">
                 <img src="../assets/images/gallery/barn/9.webp" alt="">
             </div>
             <div class="gallery-item span-2">
