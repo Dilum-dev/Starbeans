@@ -25,6 +25,14 @@ include '../includes/barn_header.php';
       width: 90%;
       height: 600px;
     }
+
+    .swal2-confirm {
+      background-color: #226D3F !important
+    }
+
+    body.swal2-shown {
+      padding-right: 0px !important;
+    }
   </style>
 </head>
 

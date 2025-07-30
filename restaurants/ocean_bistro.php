@@ -11,19 +11,27 @@ include '../includes/ocean_header.php';
   <title>Starbeans Ocean Bistro</title>
   <link rel="stylesheet" href="../assets/css/ocean_bistro.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
-  
+
   <style>
     .location_map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
 
-.frame {
-  width: 90%;
-  height: 600px;
-}
+    .frame {
+      width: 90%;
+      height: 600px;
+    }
+
+    .swal2-confirm {
+      background-color: #22496D !important
+    }
+
+    body.swal2-shown {
+      padding-right: 0px !important;
+    } 
   </style>
 </head>
 
@@ -122,7 +130,7 @@ include '../includes/ocean_header.php';
       </div>
     </div>
   </div>
-  
+
   <div class="menu-buttons-container">
     <button class="menu-button active" onclick="window.open('../assets/OCEAN BISTRO - FOOD & DRINK.pdf', '_blank');">Food & Drink</button>
     <button class="menu-button" onclick="window.open('../assets/OCEAN BISTRO - WINE & LIQUOR.pdf', '_blank');">Wine & Liquor</button>
@@ -251,7 +259,7 @@ include '../includes/ocean_header.php';
     <?php
     include '../email_processes/bistro/contactOcean.php';
     ?>
-    
+
   </div>
 
   <?php

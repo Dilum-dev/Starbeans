@@ -25,6 +25,18 @@ include '../includes/takefive_header.php';
       width: 90%;
       height: 600px;
     }
+
+    .swal2-confirm {
+      background-color: #8B2B2B !important;
+    }
+
+    .swal2-container {
+      padding: 0 !important;
+    }
+
+    body.swal2-shown {
+      padding-right: 0px !important;
+    }
   </style>
 </head>
 
