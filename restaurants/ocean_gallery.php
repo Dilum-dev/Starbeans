@@ -39,7 +39,7 @@
                 <img src="../assets/images/gallery/ocean/1.webp" alt="">
             </div>
             <div class="gallery-item span-2">
-                <img src="../assets/images/gallery/ocean/2.webp" alt="">
+                <img src="../assets/images/gallery/ocean/23.webp" alt="">
             </div>
             <div class="gallery-item span-1">
                 <img src="../assets/images/gallery/ocean/3.webp" alt="">
@@ -66,7 +66,7 @@
                 <img src="../assets/images/gallery/ocean/10.webp" alt="">
             </div>
             <div class="gallery-item span-tall">
-                <img src="../assets/images/gallery/ocean/11.webp" alt="">
+                <img src="../assets/images/gallery/ocean/22.webp" alt="">
             </div>
             <div class="gallery-item span-1">
                 <img src="../assets/images/gallery/ocean/12.webp" alt="">
@@ -99,10 +99,10 @@
                 <img src="../assets/images/gallery/ocean/21.webp" alt="">
             </div>
             <div class="gallery-item span-2">
-                <img src="../assets/images/gallery/ocean/22.webp" alt="">
+                <img src="../assets/images/gallery/ocean/11.webp" alt="">
             </div>
             <div class="gallery-item span-tall">
-                <img src="../assets/images/gallery/ocean/23.webp" alt="">
+                <img src="../assets/images/gallery/ocean/2.webp" alt="">
             </div>
             <div class="gallery-item span-1">
                 <img src="../assets/images/gallery/ocean/24.webp" alt="">
