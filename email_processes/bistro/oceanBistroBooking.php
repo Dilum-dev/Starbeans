@@ -22,7 +22,7 @@
       --innerText-color: #F3F1C4;
       --calendarHover-color: #23427c;
       --calendarText-color: #F3F1C4;
-      --calendarSelect-color: #143168;
+      --calendarSelect-color: #0b1e46ff;
       --calendarToday-color: #203c70;
       --calendarOther-color: #ccc;
       --border-color: #F3F1C4;
