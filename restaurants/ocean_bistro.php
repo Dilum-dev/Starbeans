@@ -80,51 +80,58 @@ include '../includes/ocean_header.php';
     <h2>Our Menu</h2>
   </div>
 
-  <div class="elegant-pasta-carousel">
+    <div class="elegant-pasta-carousel">
     <div class="carousel-viewport">
       <div class="carousel-track">
         <!-- 6 items (3 original + 3 duplicates for seamless loop) -->
         <div class="pasta-card" data-title="GOURMET PASTA" data-desc="Handcrafted with imported Italian durum wheat semolina">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Gourmet Pasta">
+          <img src="../assets/images/menu/menu1.webp" alt="Gourmet Pasta">
           <div class="dish-info">
-            <h3 class="dish-title">GOURMET PASTA</h3>
+            <h3 class="dish-title">Avocado Toast</h3>
             <p class="dish-subtitle">Handcrafted</p>
           </div>
         </div>
         <div class="pasta-card" data-title="TRUFFLE PASTA" data-desc="Infused with black truffle essence">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Truffle Pasta">
+          <img src="../assets/images/menu/menu2.webp" alt="Truffle Pasta">
           <div class="dish-info">
-            <h3 class="dish-title">TRUFFLE PASTA</h3>
-            <p class="dish-subtitle">Gourmet</p>
+            <h3 class="dish-title">Chocolate Brownie</h3>
+            <p class="dish-subtitle">Handcrafted</p>
           </div>
         </div>
         <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Seafood Pasta">
+          <img src="../assets/images/menu/menu3.webp" alt="Seafood Pasta">
           <div class="dish-info">
-            <h3 class="dish-title">SEAFOOD PASTA</h3>
-            <p class="dish-subtitle">Fresh Catch</p>
+            <h3 class="dish-title">Prawn & Spinach Penne</h3>
+            <p class="dish-subtitle">Gourmet</p>
           </div>
         </div>
         <!-- Duplicates -->
         <div class="pasta-card" data-title="GOURMET PASTA" data-desc="Handcrafted with imported Italian durum wheat semolina">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Gourmet Pasta">
+          <img src="../assets/images/menu/menu8.webp" alt="Gourmet Pasta">
           <div class="dish-info">
-            <h3 class="dish-title">GOURMET PASTA</h3>
-            <p class="dish-subtitle">Handcrafted</p>
+            <h3 class="dish-title">Spaghetti Pomodoro</h3>
+            <p class="dish-subtitle">Gourmet</p>
           </div>
         </div>
         <div class="pasta-card" data-title="TRUFFLE PASTA" data-desc="Infused with black truffle essence">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Truffle Pasta">
+          <img src="../assets/images/menu/menu5.webp" alt="Truffle Pasta">
           <div class="dish-info">
-            <h3 class="dish-title">TRUFFLE PASTA</h3>
+            <h3 class="dish-title">Creamy Alfredo Penne</h3>
             <p class="dish-subtitle">Gourmet</p>
           </div>
         </div>
         <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Seafood Pasta">
+          <img src="../assets/images/menu/menu6.webp" alt="Seafood Pasta">
           <div class="dish-info">
-            <h3 class="dish-title">SEAFOOD PASTA</h3>
-            <p class="dish-subtitle">Fresh Catch</p>
+            <h3 class="dish-title">Tropical Smoothie Bowl</h3>
+            <p class="dish-subtitle">Handcrafted</p>
+          </div>
+        </div>
+        <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
+          <img src="../assets/images/menu/menu7.webp" alt="Seafood Pasta">
+          <div class="dish-info">
+            <h3 class="dish-title">Tempura Platter</h3>
+            <p class="dish-subtitle">Handcrafted</p>
           </div>
         </div>
       </div>
