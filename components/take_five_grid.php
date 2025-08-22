@@ -248,7 +248,7 @@
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="../assets/images/takeGrid/timg1.webp" alt="image1">
+            <img src="../assets/images/gallery/take_five/34.webp" alt="image1">
             <div class="overlay">
                 <p>Take Five</p>
                 <h3>Aura</h3>
@@ -256,7 +256,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="../assets/images/takeGrid/timg2.webp" alt="image2">
+            <img src="../assets/images/gallery/take_five/17.webp" alt="image2">
             <div class="overlay">
                 <p>Take Five</p>
                 <h3>The Vibe</h3>
@@ -264,7 +264,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="../assets/images/takeGrid/timg3.webp" alt="image3">
+            <img src="../assets/images/gallery/take_five/5.webp" alt="image3">
             <div class="overlay">
                 <p>Take Five</p>
                 <h3>Culinary Delight</h3>
@@ -272,7 +272,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="../assets/images/takeGrid/timg4.webp" alt="image4">
+            <img src="../assets/images/gallery/take_five/38.webp" alt="image4">
             <div class="overlay">
                 <p>Take Five</p>
                 <h3>Experience</h3>
@@ -280,7 +280,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="../assets/images/takeGrid/timg5.webp" alt="image5">
+            <img src="../assets/images/gallery/take_five/52.webp" alt="image5">
             <div class="overlay">
                 <p>Take Five</p>
                 <h3>Ambience</h3>
@@ -288,7 +288,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="../assets/images/takeGrid/timg6.webp" alt="image6">
+            <img src="../assets/images/gallery/take_five/45.webp" alt="image6">
             <div class="overlay">
                 <p>Take Five</p>
                 <h3>Interior</h3>

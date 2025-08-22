@@ -44,7 +44,7 @@ include '../includes/takefive_header.php';
   <section class="video-section">
     <div class="video-background">
       <video autoplay muted loop playsinline>
-        <source src="../assets/video/ocean_intro.mp4" type="video/mp4">
+        <source src="../assets/video/take_intro.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -90,21 +90,21 @@ include '../includes/takefive_header.php';
       <div class="carousel-track">
         <!-- 6 items (3 original + 3 duplicates for seamless loop) -->
         <div class="pasta-card" data-title="GOURMET PASTA" data-desc="Handcrafted with imported Italian durum wheat semolina">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Gourmet Pasta">
+          <img src="../assets/images/menu/menu1.webp" alt="Gourmet Pasta">
           <div class="dish-info">
             <h3 class="dish-title">GOURMET PASTA</h3>
             <p class="dish-subtitle">Handcrafted</p>
           </div>
         </div>
         <div class="pasta-card" data-title="TRUFFLE PASTA" data-desc="Infused with black truffle essence">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Truffle Pasta">
+          <img src="../assets/images/menu/menu2.webp" alt="Truffle Pasta">
           <div class="dish-info">
             <h3 class="dish-title">TRUFFLE PASTA</h3>
             <p class="dish-subtitle">Gourmet</p>
           </div>
         </div>
         <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Seafood Pasta">
+          <img src="../assets/images/menu/menu3.webp" alt="Seafood Pasta">
           <div class="dish-info">
             <h3 class="dish-title">SEAFOOD PASTA</h3>
             <p class="dish-subtitle">Fresh Catch</p>
@@ -112,21 +112,28 @@ include '../includes/takefive_header.php';
         </div>
         <!-- Duplicates -->
         <div class="pasta-card" data-title="GOURMET PASTA" data-desc="Handcrafted with imported Italian durum wheat semolina">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Gourmet Pasta">
+          <img src="../assets/images/menu/menu8.webp" alt="Gourmet Pasta">
           <div class="dish-info">
             <h3 class="dish-title">GOURMET PASTA</h3>
             <p class="dish-subtitle">Handcrafted</p>
           </div>
         </div>
         <div class="pasta-card" data-title="TRUFFLE PASTA" data-desc="Infused with black truffle essence">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Truffle Pasta">
+          <img src="../assets/images/menu/menu5.webp" alt="Truffle Pasta">
           <div class="dish-info">
             <h3 class="dish-title">TRUFFLE PASTA</h3>
             <p class="dish-subtitle">Gourmet</p>
           </div>
         </div>
         <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/pasta-01-min.png" alt="Seafood Pasta">
+          <img src="../assets/images/menu/menu6.webp" alt="Seafood Pasta">
+          <div class="dish-info">
+            <h3 class="dish-title">SEAFOOD PASTA</h3>
+            <p class="dish-subtitle">Fresh Catch</p>
+          </div>
+        </div>
+        <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
+          <img src="../assets/images/menu/menu7.webp" alt="Seafood Pasta">
           <div class="dish-info">
             <h3 class="dish-title">SEAFOOD PASTA</h3>
             <p class="dish-subtitle">Fresh Catch</p>
@@ -181,10 +188,10 @@ include '../includes/takefive_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-scaled.webp" alt="Starbeans Store Front">
+            <img src="../assets/images/gallery/take_five/47.webp" alt="Starbeans Store Front">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.41.10_abb59a31-scaled.jpg" alt="Coffee Preparation">
+            <img src="../assets/images/gallery/take_five/3.webp" alt="Coffee Preparation">
           </div>
         </div>
       </div>
@@ -193,10 +200,10 @@ include '../includes/takefive_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.47.07_3da6c3fc-scaled.jpg" alt="Coffee Art">
+            <img src="../assets/images/gallery/take_five/52.webp" alt="Coffee Art">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.47.39_b74d085b-scaled.jpg" alt="Coffee Shop Interior">
+            <img src="../assets/images/gallery/take_five/19.webp" alt="Coffee Shop Interior">
           </div>
         </div>
       </div>
@@ -205,10 +212,10 @@ include '../includes/takefive_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.47.39_d433e567-scaled.jpg" alt="Coffee Beans">
+            <img src="../assets/images/gallery/take_five/5.webp" alt="Coffee Beans">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.50.27_9dfe75a9-scaled.jpg" alt="Barista Working">
+            <img src="../assets/images/gallery/take_five/45.webp" alt="Barista Working">
           </div>
         </div>
       </div>
@@ -217,10 +224,10 @@ include '../includes/takefive_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.50.28_cccec2a0-scaled.jpg" alt="Coffee Cup">
+            <img src="../assets/images/gallery/take_five/46.webp" alt="Coffee Cup">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.39_dfad539e-scaled.jpg" alt="Coffee Machine">
+            <img src="../assets/images/gallery/take_five/25.webp" alt="Coffee Machine">
           </div>
         </div>
       </div>
@@ -229,10 +236,10 @@ include '../includes/takefive_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.40_22929715-scaled.jpg" alt="Coffee Presentation">
+            <img src="../assets/images/gallery/take_five/21.webp" alt="Coffee Presentation">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.41_e0ec3d1b-scaled.jpg" alt="Coffee Ingredients">
+            <img src="../assets/images/gallery/take_five/15.webp" alt="Coffee Ingredients">
           </div>
         </div>
       </div>
@@ -241,23 +248,23 @@ include '../includes/takefive_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.42_0f7da11a-scaled.jpg" alt="Coffee Details">
+            <img src="../assets/images/gallery/take_five/57.webp" alt="Coffee Details">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-scaled.webp" alt="Starbeans Store Front">
+            <img src="../assets/images/gallery/take_five/44.webp" alt="Starbeans Store Front">
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="see-more-btn">
-      <a href="#">
+    <div class="see-more-btn">
+      <a href="take_gallery.php">
         Explore More
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
       </a>
-    </div> -->
+    </div>
 
     <?php
     include '../email_processes/take/contactTake.php';

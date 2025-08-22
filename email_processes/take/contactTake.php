@@ -356,7 +356,7 @@
       <div class="contact-grid">
         <!-- Contact Image -->
         <div class="contact-info">
-          <img src="../assets/images/take_vibe.webp" alt="Contact Starbeans" class="contact-image">
+          <img src="../assets/images/gallery/take_five/30.webp" alt="Contact Starbeans" class="contact-image">
         </div>
 
         <!-- Contact Form -->

@@ -701,7 +701,7 @@ select {
   align-items: center;
   justify-content: center;
   padding: 18px 40px;
-  background: linear-gradient(135deg, #82623d, #6a5232);
+  background: linear-gradient(135deg, #a84242, #8B2B2B);
   color: white;
   text-decoration: none;
   border-radius: 12px;
@@ -713,7 +713,7 @@ select {
 }
 
 .see-more-btn a:hover {
-  background: linear-gradient(135deg, #6a5232, #53412a);
+  background: linear-gradient(135deg, #9e3d3d, #752121);
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 12px 30px rgba(43, 108, 176, 0.4);
 }
