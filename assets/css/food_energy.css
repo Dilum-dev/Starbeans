@@ -283,7 +283,7 @@ section {
 
 .dish-title {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem !important;
+  font-size: 2rem !important;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #2d3748;
@@ -671,7 +671,7 @@ section {
     height: 250px;
   }
   .dish-title{
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
 
   .pasta-card {
@@ -708,7 +708,7 @@ section {
   }
 
   .dish-title {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
 
   .pasta-card {
