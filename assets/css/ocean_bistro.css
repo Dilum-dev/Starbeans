@@ -731,17 +731,17 @@ select {
 }
 
 @media (max-width: 768px) {
-  .subtitle{
+  .subtitle {
     font-size: 4rem !important;
   }
-  .dish-title{
+  .dish-title {
     font-size: 2rem !important;
   }
-  .reviews-title{
-    font-size:3rem !important;
+  .reviews-title {
+    font-size: 3rem !important;
   }
 
-    .google_map iframe {
+  .google_map iframe {
     width: 90%;
     height: 400px;
   }
@@ -752,7 +752,7 @@ select {
     font-size: 2.5rem !important;
     margin-top: -20px;
   }
-  .subtitle{
+  .subtitle {
     font-size: 3rem !important;
   }
 
@@ -769,7 +769,8 @@ select {
     height: 400px;
   }
 
-  .gallery-header p{
+  .gallery-header p {
     font-size: 1rem;
   }
 }
+

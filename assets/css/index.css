@@ -195,3 +195,9 @@ body {
   }
 }
 
+
+@media (min-height: 600px) {
+  .content {
+    height: 100% !important;
+  }
+}
