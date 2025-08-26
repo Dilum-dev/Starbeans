@@ -279,15 +279,22 @@
 
         // Close mobile menu when clicking a link
         document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 992) {
-                    navLinks.classList.remove('active');
-                    hamburger.children[0].style.transform = '';
-                    hamburger.children[1].style.opacity = '';
-                    hamburger.children[2].style.transform = '';
-                }
-            });
-        });
+    link.addEventListener('click', (e) => {
+        const parent = link.parentElement;
+
+        // If the link is inside a dropdown parent (has submenu), don't close menu
+        if (window.innerWidth <= 992 && parent.classList.contains('dropdown')) {
+            e.preventDefault(); // prevent auto navigation for parent click
+            parent.classList.toggle('active');
+        } else if (window.innerWidth <= 992) {
+            // For normal links, close the mobile menu
+            navLinks.classList.remove('active');
+            hamburger.children[0].style.transform = '';
+            hamburger.children[1].style.opacity = '';
+            hamburger.children[2].style.transform = '';
+        }
+    });
+});
 
         // Hide navbar on scroll down, show on scroll up
         let lastScroll = 0;
