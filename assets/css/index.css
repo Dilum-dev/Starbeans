@@ -197,9 +197,9 @@ body {
 
 @media (max-height: 600px) {
   .content {
-    height: 100% !important;
+    height: 640px !important;
   }
   .video-background {
-    height: 110% !important;
+    height: 640px !important;
   }
 }
