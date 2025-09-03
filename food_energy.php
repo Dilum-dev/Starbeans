@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starbeans - Food Energy</title>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <link rel="stylesheet" href="assets/css/food_energy.css">
-  </head>
+</head>
+
 <body>
   <!-- Hero Section -->
-   <?php include 'includes/header.php'; ?>
+  <?php include 'includes/header.php'; ?>
   <header class="food-hero">
     <div class="food-parallax"></div>
     <div class="hero-content">
@@ -33,79 +35,12 @@
       <div class="gallery-header">
         <h2>Top Menu Items</h2>
       </div>
-      
-          <div class="elegant-pasta-carousel">
-    <div class="carousel-viewport">
-      <div class="carousel-track">
-        <!-- 6 items (3 original + 3 duplicates for seamless loop) -->
-        <div class="pasta-card" data-title="GOURMET PASTA" data-desc="Handcrafted with imported Italian durum wheat semolina">
-          <img src="../assets/images/menu/menu1.webp" alt="Gourmet Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Avocado Toast</h3>
-            <p class="dish-subtitle">Handcrafted</p>
-          </div>
-        </div>
-        <div class="pasta-card" data-title="TRUFFLE PASTA" data-desc="Infused with black truffle essence">
-          <img src="../assets/images/menu/menu2.webp" alt="Truffle Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Chocolate Brownie</h3>
-            <p class="dish-subtitle">Handcrafted</p>
-          </div>
-        </div>
-        <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="../assets/images/menu/menu3.webp" alt="Seafood Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Prawn & Spinach Penne</h3>
-            <p class="dish-subtitle">Gourmet</p>
-          </div>
-        </div>
-        <!-- Duplicates -->
-        <div class="pasta-card" data-title="GOURMET PASTA" data-desc="Handcrafted with imported Italian durum wheat semolina">
-          <img src="../assets/images/menu/menu8.webp" alt="Gourmet Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Spaghetti Pomodoro</h3>
-            <p class="dish-subtitle">Gourmet</p>
-          </div>
-        </div>
-        <div class="pasta-card" data-title="TRUFFLE PASTA" data-desc="Infused with black truffle essence">
-          <img src="../assets/images/menu/menu5.webp" alt="Truffle Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Creamy Alfredo Penne</h3>
-            <p class="dish-subtitle">Gourmet</p>
-          </div>
-        </div>
-        <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="../assets/images/menu/menu6.webp" alt="Seafood Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Tropical Smoothie Bowl</h3>
-            <p class="dish-subtitle">Handcrafted</p>
-          </div>
-        </div>
-        <div class="pasta-card" data-title="SEAFOOD PASTA" data-desc="With fresh Mediterranean seafood">
-          <img src="../assets/images/menu/menu7.webp" alt="Seafood Pasta">
-          <div class="dish-info">
-            <h3 class="dish-title">Tempura Platter</h3>
-            <p class="dish-subtitle">Handcrafted</p>
-          </div>
-      
-    </div>
+
+      <?php include 'includes/menuSlider.php'; ?>
+
+
   </section>
 
-  <!-- Modal Popup -->
-  <div id="pastaModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <div class="modal-grid">
-        <div class="modal-image-container">
-          <img id="modalDishImage" src="" alt="Dish Image">
-        </div>
-        <div class="modal-text-container">
-          <h2 id="modalDishTitle"></h2>
-          <p id="modalDishDescription"></p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Casual Bistro Section -->
   <section class="showcase-section">
@@ -116,7 +51,7 @@
         <p>Complementing our vibrant menu, we offer an array of premium wines, handcrafted cocktails, refreshing fruit juices, smoothies, & refreshing cafē all designed to elevate your dining experience.</p>
         <p>To complete the relaxation, our signature coffee and decadent desserts provide the perfect finale, making every meal at STARBEANS truly unforgettable.</p>
       </div>
-      
+
       <div class="button-group">
         <button class="menu-button">
           <span>Ocean Bistro Menu</span>
@@ -164,7 +99,7 @@
     <div class="section-wrapper">
       <h2 class="section-title playfair">Signature Dishes</h2>
       <h3 class="section-subtitle">Global Flavors, Local Touch</h3>
-      
+
       <div class="food-grid">
         <!-- Sri Lankan -->
         <div class="food-card">
@@ -186,7 +121,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Italian -->
         <div class="food-card">
           <div class="food-image">
@@ -207,32 +142,33 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Japanese -->
-  <div class="food-card">
-  <div class="food-image">
-    <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/food-menu-1-scaled.webp" alt="Burrito Wrap with sides">
-    <div class="food-overlay"></div>
-  </div>
-  <div class="food-content">
-    <div class="food-origin">
-      <img src="https://flagcdn.com/w80/mx.png" class="origin-flag" alt="Mexico flag">
-      <span>Mexican</span>
-    </div>
-    <h4 class="food-name">Burrito Wrap Platter</h4>
-    <p class="food-description">A hearty burrito wrap stuffed with shredded chicken, rice, beans and veggies, served with crispy tortilla chips and three dips: fresh guacamole, garlic sauce, and pico de gallo salsa.</p>
-    <div class="food-specs">
-      <span class="spec-tag">Hearty</span>
-      <span class="spec-tag">Flavorful</span>
-      <span class="spec-tag">Shareable</span>
-    </div>
-  </div>
-</div>
+        <div class="food-card">
+          <div class="food-image">
+            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/food-menu-1-scaled.webp" alt="Burrito Wrap with sides">
+            <div class="food-overlay"></div>
+          </div>
+          <div class="food-content">
+            <div class="food-origin">
+              <img src="https://flagcdn.com/w80/mx.png" class="origin-flag" alt="Mexico flag">
+              <span>Mexican</span>
+            </div>
+            <h4 class="food-name">Burrito Wrap Platter</h4>
+            <p class="food-description">A hearty burrito wrap stuffed with shredded chicken, rice, beans and veggies, served with crispy tortilla chips and three dips: fresh guacamole, garlic sauce, and pico de gallo salsa.</p>
+            <div class="food-specs">
+              <span class="spec-tag">Hearty</span>
+              <span class="spec-tag">Flavorful</span>
+              <span class="spec-tag">Shareable</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-<script src="assets/js/food_energy.js"></script>
-<?php include 'includes/footer.php'; ?>
+  <script src="assets/js/food_energy.js"></script>
+  <?php include 'includes/footer.php'; ?>
 </body>
+
 </html>
