@@ -1,27 +1,36 @@
 <?php
 header('Content-Type: application/json');
 
-include "../../email/SMTP.php";
-include "../../email/PHPMailer.php";
-include "../../email/Exception.php";
+include "../email/SMTP.php";
+include "../email/PHPMailer.php";
+include "../email/Exception.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 
 // Initialize response array
 $response = ['success' => false, 'message' => ''];
 
-try {
-    // Get POST data
-    $firstName = $_POST['firstName'] ?? '';
-    $lastName = $_POST['lastName'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $phone = $_POST['phone'] ?? '';
-    $subject = $_POST['subject'] ?? '';
-    $message = $_POST['message'] ?? '';
-    $name = $firstName . ' ' . $lastName;
 
-    $body = '
-    <!DOCTYPE html>
+try {
+
+    $email = $_POST['email'] ?? '';
+
+    try {
+        file_put_contents("subList.txt", $email . PHP_EOL, FILE_APPEND | LOCK_EX);
+    }catch (Exception $e) {
+        $response['message'] = 'Failed to save email to list: ' . $e->getMessage();
+        echo json_encode($response);
+        exit;
+    }
+
+    date_default_timezone_set('Asia/Colombo');
+
+$now   = new DateTime('now', new DateTimeZone('Asia/Colombo'));
+$today = $now->format('Y-m-d');
+$time  = $now->format('h:i A');
+
+    $body = <<<HTML
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -180,14 +189,14 @@ try {
     <div class="email-container">
         <!-- Header Section -->
         <div class="header">
-            <h1>New Customer Inquiry</h1>
+            <h1>New Newsletter Subscription</h1>
             <p>Admin Notification</p>
         </div>
         
         <!-- Main Content -->
         <div class="content">
             
-            <p>A new customer inquiry has been received through your website contact form. Please review the details below and respond promptly.</p>
+            <p>A new newsletter subscription has been received through your website contact form. Please review the details below and respond promptly.</p>
             
             <!-- Customer Details -->
             <div class="inquiry-details">
@@ -196,57 +205,24 @@ try {
                 </div>
                 
                 <div class="detail-row">
-                    <div class="detail-label">Customer Name:</div>
-                    <div class="detail-value"><strong>'.$firstName.' '.$lastName.'</strong></div>
-                </div>
-                
-                <div class="detail-row">
                     <div class="detail-label">Email Address:</div>
                     <div class="detail-value contact-links">
-                        <a href="mailto:'.$email.'">'.$email.'</a>
+                        <a href="mailto:'.$email.'">{$email}</a>
                     </div>
                 </div>
-                
                 <div class="detail-row">
-                    <div class="detail-label">Mobile Number:</div>
+                    <div class="detail-label">View Current List:</div>
                     <div class="detail-value contact-links">
-                        <a href="tel:'.$phone.'">'.$phone.'</a>
+                        <a href="/newsletter/viewSubList.php">View all subscribers list</a>
                     </div>
                 </div>
-
-                <div class="detail-row">
-                    <div class="detail-label">Restaurant:</div>
-                    <div class="detail-value"><strong>Take Five</strong></div>
-                </div>
-
                 
-            </div>
-            
-            <!-- Message Content -->
-            <div class="inquiry-details">
-                <div class="detail-header">
-                    💬 Customer Message
-                </div>
-                
-                <div class="detail-row">
-                    <div class="detail-label">Subject:</div>
-                    <div class="detail-value">'.$subject.'</div>
-                </div>
-                
-                <div class="detail-row">
-                    <div class="detail-label">Message:</div>
-                    <div class="detail-value">
-                        <div class="message-content">
-                            '.$message.'
-                        </div>
-                    </div>
-                </div>
             </div>
             
             <!-- Timestamp -->
             <div class="inquiry-details">
                 <div class="timestamp">
-                    <strong>Received:</strong> '.date("Y-m-d").' at '.date("h:i").' | <strong>Source:</strong> Website Contact Form
+                    <strong>Received:</strong> {$today} at {$time} | <strong>Source:</strong> Website Newsletter Form
                 </div>
             </div>
             
@@ -260,7 +236,7 @@ try {
     </div>
 </body>
 </html>
-    ';
+HTML;
 
     $mail = new PHPMailer;
     $mail->IsSMTP();
@@ -270,11 +246,11 @@ try {
     $mail->Password = 'awntzmogjcxwfncy';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom($email, $name);
-    $mail->addReplyTo($email, $name);
+    $mail->setFrom($email, 'The Starbeans');
+    $mail->addReplyTo($email, 'The Starbeans');
     $mail->addAddress('sudheeradilum@gmail.com');
     $mail->isHTML(true);
-    $mail->Subject = "Contact Form: " . $subject;
+    $mail->Subject = "Starbeans Newsletter";
     $mail->Body = $body;
 
     if ($mail->send()) {

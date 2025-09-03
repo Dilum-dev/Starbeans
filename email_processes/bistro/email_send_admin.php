@@ -220,7 +220,7 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'sudheeradilum@gmail.com';
-    $mail->Password = 'ffauohhfnynozkde';
+    $mail->Password = 'awntzmogjcxwfncy';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
