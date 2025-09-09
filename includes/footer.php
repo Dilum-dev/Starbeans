@@ -431,11 +431,11 @@
       };
 
       Promise.all([
-        fetch('/geminiflare/Starbeans/newsletter/newsletter_admin.php', {
+        fetch('/newsletter/newsletter_admin.php', {
           method: 'POST',
           body: formData
         }).then(parseResponse),
-        fetch('/geminiflare/Starbeans/newsletter/newsletter_user.php', {
+        fetch('/newsletter/newsletter_user.php', {
           method: 'POST',
           body: formData
         }).then(parseResponse)
