@@ -1,9 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-include "../email/SMTP.php";
-include "../email/PHPMailer.php";
-include "../email/Exception.php";
+include "/email/SMTP.php";
+include "/email/PHPMailer.php";
+include "/email/Exception.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 
