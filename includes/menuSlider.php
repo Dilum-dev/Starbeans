@@ -95,9 +95,23 @@
   .nav-btn:hover {
     transform: translateY(-50%) scale(1.1);
   }
+    #prevBtn {
+      left: -70px;
+    }
 
-  #prevBtn { left: 10px; }
-  #nextBtn { right: 10px; }
+    #nextBtn {
+      right: -70px;
+    }
+
+    @media (max-width: 1345px) {
+      #prevBtn {
+        left: 10px;
+      }
+
+      #nextBtn {
+        right: 10px;
+      }
+    }
 </style>
 </head>
 <body>
