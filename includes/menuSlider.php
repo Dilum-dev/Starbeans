@@ -62,6 +62,7 @@
       font-weight: 600;
       letter-spacing: 1px;
       text-transform: uppercase;
+      font-family: "Playfair Display", serif;
     }
 
     .item-subtitle {
@@ -69,6 +70,7 @@
       font-size: 1rem;
       font-weight: 300;
       letter-spacing: 0.5px;
+      font-family: "Playfair Display", serif;
     }
 
     /* Navigation buttons */
@@ -121,37 +123,37 @@
     <div class="slider-wrapper">
       <div class="slider-container1" id="sliderContainer1">
         <div class="menu-item">
-          <img src="../assets/images/menu/menu1.webp" alt="Chocolate Brownie" class="item-image">
+          <img src="assets/images/menu/menu1.webp" alt="Chocolate Brownie" class="item-image">
           <h3 class="item-title">Avocado Toast</h3>
           <p class="item-subtitle">Handcrafted</p>
         </div>
         <div class="menu-item">
-          <img src="../assets/images/menu/menu2.webp" alt="Prawn & Spinach Penne" class="item-image">
+          <img src="assets/images/menu/menu2.webp" alt="Prawn & Spinach Penne" class="item-image">
           <h3 class="item-title">Chocolate Brownie</h3>
           <p class="item-subtitle">Handcrafted</p>
         </div>
         <div class="menu-item">
-          <img src="../assets/images/menu/menu3.webp" alt="Spaghetti Pomodoro" class="item-image">
+          <img src="assets/images/menu/menu3.webp" alt="Spaghetti Pomodoro" class="item-image">
           <h3 class="item-title">Prawn & Spinach Penne</h3>
           <p class="item-subtitle">Gourmet</p>
         </div>
         <div class="menu-item">
-          <img src="../assets/images/menu/menu8.webp" alt="Creamy Pesto Pasta" class="item-image">
+          <img src="assets/images/menu/menu8.webp" alt="Creamy Pesto Pasta" class="item-image">
           <h3 class="item-title">Spaghetti Pomodoro</h3>
           <p class="item-subtitle">Gourmet</p>
         </div>
         <div class="menu-item">
-          <img src="../assets/images/menu/menu5.webp" alt="Margherita Pizza" class="item-image">
+          <img src="assets/images/menu/menu5.webp" alt="Margherita Pizza" class="item-image">
           <h3 class="item-title">Creamy Alfredo Penne</h3>
           <p class="item-subtitle">Gourmet</p>
         </div>
         <div class="menu-item">
-          <img src="../assets/images/menu/menu6.webp" alt="Pancakes" class="item-image">
+          <img src="assets/images/menu/menu6.webp" alt="Pancakes" class="item-image">
           <h3 class="item-title">Tropical Smoothie Bowl</h3>
           <p class="item-subtitle">Handcrafted</p>
         </div>
         <div class="menu-item">
-          <img src="../assets/images/menu/menu7.webp" alt="Pancakes" class="item-image">
+          <img src="assets/images/menu/menu7.webp" alt="Pancakes" class="item-image">
           <h3 class="item-title">Tempura Platter</h3>
           <p class="item-subtitle">Handcrafted</p>
         </div>
