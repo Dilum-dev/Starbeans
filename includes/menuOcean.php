@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smooth Infinite Menu Slider</title>
   <style>
-    .menu-slider-container {
+    .menu-slider-container1 {
       position: relative;
       max-width: 1200px;
       margin: auto;
@@ -19,7 +19,7 @@
       background: white;
     }
 
-    .slider-container {
+    .slider-container1 {
       display: flex;
       gap: 30px;
       width: max-content;
@@ -116,9 +116,9 @@
 </head>
 
 <body>
-  <div class="menu-slider-container">
+  <div class="menu-slider-container1">
     <div class="slider-wrapper">
-      <div class="slider-container" id="sliderContainer">
+      <div class="slider-container1" id="sliderContainer1">
         <div class="menu-item">
           <img src="../assets/images/menu/menu1.webp" alt="Chocolate Brownie" class="item-image">
           <h3 class="item-title">Avocado Toast</h3>
@@ -162,12 +162,12 @@
   </div>
 
   <script>
-    const container = document.getElementById('sliderContainer');
+    const container1 = document.getElementById('sliderContainer1');
     const wrapper = document.querySelector('.slider-wrapper');
     let speed = 0.5;
-    let pos = 0;
+    let pos1 = 0;
     const gap = 30; // gap between items
-    const items = Array.from(container.children);
+    const items = Array.from(container1.children);
     const itemWidth = items[0].offsetWidth + gap;
     const totalItems = items.length;
     const containerWidth = wrapper.offsetWidth;
@@ -175,7 +175,7 @@
     // Clone items for seamless infinite scroll
     items.forEach(item => {
       const clone = item.cloneNode(true);
-      container.appendChild(clone);
+      container1.appendChild(clone);
     });
 
     const maxScroll = -((totalItems * itemWidth));
@@ -187,15 +187,15 @@
 
     function animate() {
       if (!isHovered) {
-        pos -= speed;
+        pos1 -= speed;
 
-        if (pos <= maxScroll) {
-          pos = 0;
-        } else if (pos > 0) {
-          pos = maxScroll;
+        if (pos1 <= maxScroll) {
+          pos1 = 0;
+        } else if (pos1 > 0) {
+          pos1 = maxScroll;
         }
 
-        container.style.transform = `translateX(${pos}px)`;
+        container1.style.transform = `translateX(${pos1}px)`;
       }
       requestAnimationFrame(animate);
     }
@@ -204,15 +204,15 @@
 
     // Navigation buttons
     document.getElementById('nextBtn').addEventListener('click', () => {
-      pos -= itemWidth;
-      if (pos <= maxScroll) pos = 0;
-      container.style.transform = `translateX(${pos}px)`;
+      pos1 -= itemWidth;
+      if (pos1 <= maxScroll) pos1 = 0;
+      container1.style.transform = `translateX(${pos1}px)`;
     });
 
     document.getElementById('prevBtn').addEventListener('click', () => {
-      pos += itemWidth;
-      if (pos > 0) pos = maxScroll;
-      container.style.transform = `translateX(${pos}px)`;
+      pos1 += itemWidth;
+      if (pos1 > 0) pos1 = maxScroll;
+      container1.style.transform = `translateX(${pos1}px)`;
     });
   </script>
 
