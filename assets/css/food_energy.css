@@ -54,8 +54,8 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-6-.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/food_energy_hero.jpg");
   background-size: cover;
   background-position: center;
   will-change: transform;

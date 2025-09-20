@@ -47,7 +47,7 @@ include '../includes/ocean_header.php';
       <a href="https://www.tripadvisor.com/Restaurant_Review-g297896-d8015592-Reviews-Ocean_Bistro_by_Starbeans-Galle_Galle_District_Southern_Province.html"
         target="_blank"
         class="award-link">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
+        <img src="../assets/images/footer/trip_footer.avif"
           alt="Traveler's Choice Award"
           class="award-logo">
       </a>
@@ -70,7 +70,7 @@ include '../includes/ocean_header.php';
   ?>
 
   <div class="history_img">
-    <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/ocean-bistro-wording-min.png" alt="">
+    <img src="../assets/images/ocean_history.png" alt="">
   </div>
 
   <br>
@@ -116,10 +116,10 @@ include '../includes/ocean_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-scaled.webp" alt="Starbeans Store Front">
+            <img src="../assets/images/flipGrid/ocean/oflip1.webp" alt="Starbeans Store Front">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.41.10_abb59a31-scaled.jpg" alt="Coffee Preparation">
+            <img src="../assets/images/flipGrid/ocean/oflip7.webp" alt="Coffee Preparation">
           </div>
         </div>
       </div>
@@ -128,10 +128,10 @@ include '../includes/ocean_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.47.07_3da6c3fc-scaled.jpg" alt="Coffee Art">
+            <img src="../assets/images/flipGrid/ocean/oflip12.webp" alt="Coffee Art">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.47.39_b74d085b-scaled.jpg" alt="Coffee Shop Interior">
+            <img src="../assets/images/flipGrid/ocean/oflip8.webp" alt="Coffee Shop Interior">
           </div>
         </div>
       </div>
@@ -140,10 +140,10 @@ include '../includes/ocean_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.47.39_d433e567-scaled.jpg" alt="Coffee Beans">
+            <img src="../assets/images/flipGrid/ocean/oflip3.webp" alt="Coffee Beans">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.50.27_9dfe75a9-scaled.jpg" alt="Barista Working">
+            <img src="../assets/images/flipGrid/ocean/oflip9.webp" alt="Barista Working">
           </div>
         </div>
       </div>
@@ -152,10 +152,10 @@ include '../includes/ocean_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.50.28_cccec2a0-scaled.jpg" alt="Coffee Cup">
+            <img src="../assets/images/flipGrid/ocean/oflip6.webp" alt="Coffee Cup">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.39_dfad539e-scaled.jpg" alt="Coffee Machine">
+            <img src="../assets/images/flipGrid/ocean/oflip10.webp" alt="Coffee Machine">
           </div>
         </div>
       </div>
@@ -164,10 +164,10 @@ include '../includes/ocean_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.40_22929715-scaled.jpg" alt="Coffee Presentation">
+            <img src="../assets/images/flipGrid/ocean/oflip11.webp" alt="Coffee Presentation">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.41_e0ec3d1b-scaled.jpg" alt="Coffee Ingredients">
+            <img src="../assets/images/flipGrid/ocean/oflip5.webp" alt="Coffee Ingredients">
           </div>
         </div>
       </div>
@@ -176,10 +176,10 @@ include '../includes/ocean_header.php';
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.42_0f7da11a-scaled.jpg" alt="Coffee Details">
+            <img src="../assets/images/flipGrid/ocean/oflip4.webp" alt="Coffee Details">
           </div>
           <div class="flip-card-back">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-scaled.webp" alt="Starbeans Store Front">
+            <img src="../assets/images/flipGrid/ocean/oflip2.webp" alt="Starbeans Store Front">
           </div>
         </div>
       </div>

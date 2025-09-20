@@ -52,7 +52,7 @@ include '../includes/takefive_header.php';
       <a href="https://www.tripadvisor.com/Restaurant_Review-g297896-d8015592-Reviews-Ocean_Bistro_by_Starbeans-Galle_Galle_District_Southern_Province.html"
         target="_blank"
         class="award-link">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
+        <img src="../assets/images/award_logo.avif"
           alt="Traveler's Choice Award"
           class="award-logo">
       </a>

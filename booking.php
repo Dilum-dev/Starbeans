@@ -24,7 +24,7 @@
     <div class="hotels-container">
       <div class="hotel-card">
         <img
-          src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/07/starbeans-plate-2.webp"
+          src="assets/images/booking_card2.webp"
           alt="Ocean Bistro"
           class="hotel-image"
         />
@@ -52,7 +52,7 @@
 
       <div class="hotel-card">
         <img
-          src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-5.webp"
+          src="assets/images/booking_card1.webp"
           alt="The Barn by Starbeans"
           class="hotel-image"
         />

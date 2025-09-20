@@ -16,7 +16,7 @@
         /* Reviews Section Styles */
         .reviews-section {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(248, 248, 248, 0.95) 100%),
-                        url('https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/ella01-font.png');
+                        url('../assets/images/barn_exp.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;

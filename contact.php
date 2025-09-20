@@ -45,7 +45,7 @@
       <div class="contact-grid">
         <!-- Contact Image -->
         <div class="contact-info">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/contact-us.jpg" alt="Contact Starbeans" class="contact-image">
+          <img src="assets/images/sendMessage_img.webp" alt="Contact Starbeans" class="contact-image">
         </div>
 
         <!-- Contact Form -->
@@ -109,7 +109,7 @@
       <div class="locations-grid">
         <a href="https://starbeans.ceylonlensmedia.com/ocean-bistro/" class="location-card">
           <div class="location-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.40_22929715-scaled.jpg" alt="Starbeans Fort Location">
+            <img src="assets/images/contactGrid_ocean.webp" alt="Starbeans Fort Location">
             <div class="location-overlay"></div>
           </div>
           <div class="location-info">
@@ -122,7 +122,7 @@
 
         <a href="https://starbeans.ceylonlensmedia.com/the-barn/" class="location-card">
           <div class="location-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/the-barn-by-starbeans-4.jpg">
+            <img src="assets/images/about_atmosphere.webp">
             <div class="location-overlay"></div>
           </div>
           <div class="location-info">
@@ -135,7 +135,7 @@
 
         <a href="https://starbeans.ceylonlensmedia.com/take-five-cafe/" class="location-card">
           <div class="location-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/Take-five-1.webp" alt="The Barn by Starbeans Ella">
+            <img src="assets/images/contactGrid_takeFive.webp" alt="The Barn by Starbeans Ella">
             <div class="location-overlay"></div>
           </div>
           <div class="location-info">

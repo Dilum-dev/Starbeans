@@ -72,7 +72,7 @@
               <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/tb-2.jpg" alt="Swift billing machine with bill" class="tech-image" />
             </div>
             <div class="image-container">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/baristas-working.webp" alt="Baristas working with modern equipment" class="tech-image" />
+              <img src="assets/images/barista_working.jpg" alt="Baristas working with modern equipment" class="tech-image" />
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
         <div class="celebrations-grid">
           <div class="celebration-card">
             <div class="celebration-image">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/Happy-birthday.webp" alt="Birthday celebration at Starbeans" />
+              <img src="assets/images/birthday_celebration.jpg" alt="Birthday celebration at Starbeans" />
               <div class="celebration-overlay"></div>
               <div class="celebration-text">
                 <span class="playfair">Birthday</span>

@@ -336,7 +336,7 @@
       </div>
 
       <div class="footer-award">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/Travelers-choice-award-thema-hotels.avif"
+        <img src="assets/images/footer/trip_footer.avif"
           alt="Travelers' Choice Award">
         <span>Travelers' Choice Award</span>
       </div>

@@ -157,7 +157,7 @@
           <p>We foster a customer-centric culture, going the extra mile by remembering regular customer preferences, offering recommendations, and maintaining friendly rapport that ensures every visit is seamless and pleasant.</p>
         </div>
         <div class="atmosphere-image">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.40_22929715-scaled.jpg" alt="Busy STARBEANS outlet exterior">
+          <img src="assets/images/about_atmosphere.webp" alt="Busy STARBEANS outlet exterior">
         </div>
       </div>
     </div>

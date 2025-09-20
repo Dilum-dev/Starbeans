@@ -59,7 +59,7 @@
 <body>
     <div class="video-background">
         <video autoplay muted loop playsinline id="bg-video">
-            <source src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-28-at-01.48.17.mp4" type="video/mp4">
+            <source src="assets/video/ocean_intro.mp4" type="video/mp4">
         </video>
     </div>
 

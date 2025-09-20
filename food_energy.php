@@ -74,7 +74,7 @@
     <div class="section-wrapper">
       <div class="chef-container">
         <div class="chef-image">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-5.webp" alt="Chef preparing pizza">
+          <img src="assets/images/food_fresh.jpg" alt="Chef preparing pizza">
         </div>
         <div class="chef-content">
           <h2 class="section-title playfair" style="text-align: left; margin-bottom: 30px;">Fresh & Healthy Creations</h2>
@@ -104,7 +104,7 @@
         <!-- Sri Lankan -->
         <div class="food-card">
           <div class="food-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/milk-rice.jpg" alt="Sri Lankan Milk Rice">
+            <img src="assets/images/milk_rice.jpg" alt="Sri Lankan Milk Rice">
             <div class="food-overlay"></div>
           </div>
           <div class="food-content">
@@ -125,7 +125,7 @@
         <!-- Italian -->
         <div class="food-card">
           <div class="food-image">
-            <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Italian pasta">
+            <img src="assets/images/italian_pizza.avif" alt="Italian pasta">
             <div class="food-overlay"></div>
           </div>
           <div class="food-content">
@@ -146,7 +146,7 @@
         <!-- Japanese -->
         <div class="food-card">
           <div class="food-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/05/food-menu-1-scaled.webp" alt="Burrito Wrap with sides">
+            <img src="assets/images/burrito_wrap.jpg" alt="Burrito Wrap with sides">
             <div class="food-overlay"></div>
           </div>
           <div class="food-content">

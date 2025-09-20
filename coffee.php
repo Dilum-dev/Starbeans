@@ -67,7 +67,7 @@
         <!-- Ethiopian -->
         <div class="coffee-card">
           <div class="coffee-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/coffee-2.webp" alt="Ethiopian coffee">
+            <img src="assets/images/ethiopian_cup.jpg" alt="Ethiopian coffee">
             <div class="coffee-overlay"></div>
           </div>
           <div class="coffee-content">
@@ -88,7 +88,7 @@
         <!-- Indonesian -->
         <div class="coffee-card">
           <div class="coffee-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/coffee-4-scaled.webp" alt="Indonesian coffee">
+            <img src="assets/images/indonesian_cup.jpg" alt="Indonesian coffee">
             <div class="coffee-overlay"></div>
           </div>
           <div class="coffee-content">
@@ -109,7 +109,7 @@
         <!-- Brazilian -->
         <div class="coffee-card">
           <div class="coffee-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/coffee-3.webp">
+            <img src="assets/images/brazilian_cup.jpg">
             <div class="coffee-overlay"></div>
           </div>
           <div class="coffee-content">
@@ -142,7 +142,7 @@
     <div class="section-wrapper">
       <div class="future-container">
         <div class="future-image">
-          <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/coffee-6.webp" alt="Coffee innovation">
+          <img src="assets/images/coffee_innovation.webp" alt="Coffee innovation">
         </div>
         <div class="future-content">
           <h2 class="section-title playfair" style="text-align: left; margin-bottom: 30px;">The Future of Flavor</h2>

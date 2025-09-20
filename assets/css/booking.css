@@ -80,7 +80,7 @@ body {
       position: absolute;
       inset: 0;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                  url('https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-6-.webp');
+                  url('../images/booking_hero.webp');
       background-size: cover;
       background-position: center;
       will-change: transform;
