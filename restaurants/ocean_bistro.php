@@ -92,7 +92,7 @@ include '../includes/ocean_header.php';
   <!-- video section -->
 
   <?php
-  include '../components/video_section.php';
+  include '../components/ocean_video_section.php';
   ?>
 
   <!-- reviews -->

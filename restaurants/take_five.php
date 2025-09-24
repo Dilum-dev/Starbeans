@@ -94,7 +94,7 @@ include '../includes/takefive_header.php';
   <!-- video section -->
 
   <?php
-  include '../components/video_section.php';
+  include '../components/take_video_section.php';
   ?>
 
   <!-- reviews -->
