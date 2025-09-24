@@ -69,9 +69,6 @@
         <div class="right-column">
           <div class="image-gallery">
             <div class="image-container">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/tb-2.jpg" alt="Swift billing machine with bill" class="tech-image" />
-            </div>
-            <div class="image-container">
               <img src="assets/images/barista_working.jpg" alt="Baristas working with modern equipment" class="tech-image" />
             </div>
           </div>
@@ -100,7 +97,7 @@
           </div>
           <div class="celebration-card">
             <div class="celebration-image">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/glasses-213156_1280.webp" alt="Honeymoon setting at Starbeans" />
+              <img src="assets/images/honeymoon .jpg" alt="Honeymoon setting at Starbeans" />
               <div class="celebration-overlay"></div>
               <div class="celebration-text">
                 <span class="playfair">Honeymoon</span>
@@ -110,7 +107,7 @@
           </div>
           <div class="celebration-card">
             <div class="celebration-image">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-20-at-09.55.40_22929715-scaled.jpg" />
+              <img src="assets/images/special_events.webp" />
               <div class="celebration-overlay"></div>
               <div class="celebration-text">
                 <span class="playfair">Special Events</span>

@@ -34,27 +34,27 @@
         <div class="carousel-viewport">
           <div class="carousel-track">
             <div class="cocktail-card">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-6.webp" alt="Lion's Roar Cocktail">
+              <img src="assets/images/lions_roar .jpg" alt="Lion's Roar Cocktail">
             </div>
             
             <div class="cocktail-card">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-3.webp" alt="Tropical Sunset">
+              <img src="assets/images/tropical_sunset.jpg" alt="Tropical Sunset">
             </div>
             
             <div class="cocktail-card">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-4.webp" alt="Spiced Negroni">
+              <img src="assets/images/spiced_negroni .jpg" alt="Spiced Negroni">
             </div>
             
             <div class="cocktail-card">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-9-scaled.webp" alt="Lion's Roar Cocktail">
+              <img src="assets/images/lions_roar .jpg" alt="Lion's Roar Cocktail">
             </div>
             
             <div class="cocktail-card">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-10.webp" alt="Tropical Sunset">
+              <img src="assets/images/tropical_sunset.jpg" alt="Tropical Sunset">
             </div>
             
             <div class="cocktail-card">
-              <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-8.webp" alt="Spiced Negroni">
+              <img src="assets/images/spiced_negroni .jpg" alt="Spiced Negroni">
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
       <div class="beverage-categories">
         <div class="category-card">
           <div class="category-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-1.webp" alt="Cocktails">
+            <img src="assets/images/signature_cokctails .jpg" alt="Cocktails">
             <div class="category-overlay"></div>
           </div>
           <div class="category-content">
@@ -94,7 +94,7 @@
         
         <div class="category-card">
           <div class="category-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/beverages-9-scaled.webp" alt="Startails">
+            <img src="assets/images/startail.jpg" alt="Startails">
             <div class="category-overlay"></div>
           </div>
           <div class="category-content">
@@ -105,7 +105,7 @@
         
         <div class="category-card">
           <div class="category-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/wine-1-scaled.webp" alt="Wines">
+            <img src="assets/images/Fine Wins.jpg" alt="Wines">
             <div class="category-overlay"></div>
           </div>
           <div class="category-content">

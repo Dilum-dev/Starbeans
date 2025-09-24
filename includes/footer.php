@@ -329,7 +329,7 @@
     <!-- Top Section -->
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png"
+        <img src="assets/images/common_logo.png"
           alt="Starbeans Logo"
           class="footer-logo">
         <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>

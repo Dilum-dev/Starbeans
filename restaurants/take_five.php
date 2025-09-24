@@ -57,7 +57,7 @@ include '../includes/takefive_header.php';
           class="award-logo">
       </a>
 
-      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/07/new-final-take-five-.png" alt="Starbeans Logo" class="main-logo">
+      <img src="../assets/images/take_logo.png" alt="Starbeans Logo" class="main-logo">
       <h2 class="subtitle" id="ocean-bistro">Ocean Bistro</h2>
       <h1 class="title">By Starbeans</h1>
 

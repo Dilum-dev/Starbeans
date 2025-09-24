@@ -65,7 +65,7 @@
 
     <div class="content">
         <div class="logo-container">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/main.png" alt="Starbeans Logo" class="main-logo">
+            <img src="assets/images/common_logo.png" alt="Starbeans Logo" class="main-logo">
         </div>
 
         <h1 class="title">Starbeans Ceylon</h1>

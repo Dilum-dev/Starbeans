@@ -7,7 +7,7 @@
     const featureImage = document.getElementById('featureImage');
 
     // Default image
-    const defaultImage = 'https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/IMG_3142-scaled.webp';
+    const defaultImage = '';
 
     // Toggle menu function
     function toggleMenu() {

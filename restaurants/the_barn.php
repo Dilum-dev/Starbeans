@@ -53,7 +53,7 @@ include '../includes/barn_header.php';
           class="award-logo">
       </a>
 
-      <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/ella-png-.png" alt="Starbeans Logo" class="main-logo">
+      <img src="../assets/images/barn_logo.webp" alt="Starbeans Logo" class="main-logo">
       <h2 class="subtitle" id="ocean-bistro">The Barn</h2>
       <h1 class="title">By Starbeans</h1>
 

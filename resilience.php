@@ -31,7 +31,7 @@
   <section id="journey" class="journey-section">
     <div class="section-wrapper">
       <div class="full-banner parallax-element">
-        <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/04/web-galle-03.png" alt="Starbeans restaurant exterior" />
+        <img src="assets/images/resilience_interior.jpg" alt="Starbeans restaurant exterior" />
         <div class="overlay-gradient"></div>
       </div>
       <div class="content-container">
@@ -61,7 +61,7 @@
         <!-- Card 1 -->
         <div class="modern-card">
           <div class="card-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/Resilience-1.webp" alt="Starbeans team collaboration">
+            <img src="assets/images/challenges.jpg" alt="Starbeans team collaboration">
             <div class="image-overlay"></div>
             <span class="card-number">01</span>
           </div>
@@ -74,7 +74,7 @@
         <!-- Card 2 -->
         <div class="modern-card">
           <div class="card-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/Resilience-2.webp" alt="Supporting local farmers">
+            <img src="assets/images/supporting_local.jpg" alt="Supporting local farmers">
             <div class="image-overlay"></div>
             <span class="card-number">02</span>
           </div>
@@ -87,7 +87,7 @@
         <!-- Card 3 -->
         <div class="modern-card">
           <div class="card-image">
-            <img src="https://starbeans.ceylonlensmedia.com/wp-content/uploads/2025/06/menu-1-.webp" alt="Innovative menu development">
+            <img src="assets/images/menu_innovation.jpg" alt="Innovative menu development">
             <div class="image-overlay"></div>
             <span class="card-number">03</span>
           </div>
