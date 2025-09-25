@@ -467,7 +467,7 @@
     <div class="starbeans-nav-wrapper">
       <div class="starbeans-logo-section">
         <a href="https://starbeansceylon.ceylonlensmedia.com/">
-          <img src="../assets/images/ocean-lg.png" alt="Starbeans Logo">
+          <img src="/assets/images/ocean-lg.png" alt="Starbeans Logo">
         </a>
       </div>
       

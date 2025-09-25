@@ -329,14 +329,14 @@
     <!-- Top Section -->
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="assets/images/common_logo.png"
+        <img src="/assets/images/common_logo.png"
           alt="Starbeans Logo"
           class="footer-logo">
         <p class="footer-slogan">Bringing people together through great food, great coffee, and good vibes since 2010.</p>
       </div>
 
       <div class="footer-award">
-        <img src="assets/images/footer/trip_footer.avif"
+        <img src="/assets/images/footer/trip_footer.avif"
           alt="Travelers' Choice Award">
         <span>Travelers' Choice Award</span>
       </div>
