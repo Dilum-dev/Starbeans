@@ -68,6 +68,7 @@
       font-size: 1rem;
       font-weight: 300;
       letter-spacing: 0.5px;
+      
     }
 
     /* Navigation buttons */
