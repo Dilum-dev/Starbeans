@@ -42,13 +42,12 @@
     }
 
     .item-image {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      /* border-radius: 50%; */
       object-fit: cover;
       margin: 0 auto 25px;
       transition: transform 0.3s ease;
-      background: #f0f0f0;
     }
 
     .menu-item:hover .item-image {
@@ -56,7 +55,7 @@
     }
 
     .item-title {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       color: #3e8d3c;
       margin-bottom: 10px;
       font-weight: 600;

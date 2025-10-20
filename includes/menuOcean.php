@@ -38,17 +38,16 @@
 
     .menu-item:hover {
       transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); 
     }
 
     .item-image {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      /* border-radius: 50%; */
       object-fit: cover;
       margin: 0 auto 25px;
       transition: transform 0.3s ease;
-      background: #f0f0f0;
     }
 
     .menu-item:hover .item-image {
@@ -56,7 +55,7 @@
     }
 
     .item-title {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       color: #2c5aa0;
       margin-bottom: 10px;
       font-weight: 600;
